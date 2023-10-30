@@ -1,0 +1,16 @@
+version: '3.7'
+name: personal_site
+services:
+  client:
+    container_name: personal_react_site
+    build:
+      context: ./my-site
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./my-site/src:/app/src
+    ports:
+      - 3000:3000
+    # env_file:
+    #   - ./env/frontend.env
+    environment:
+      - WATCHPACK_POLLING=true

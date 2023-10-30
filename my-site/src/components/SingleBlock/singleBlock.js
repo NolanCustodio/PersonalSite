@@ -1,0 +1,13 @@
+import React from "react";
+
+const singleBlock = () => {
+
+    return(
+        <div>
+            <h1>hi</h1>
+        </div>
+    )
+
+}
+
+export default singleBlock;

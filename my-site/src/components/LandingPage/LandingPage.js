@@ -5,7 +5,7 @@ import singleBlock from '../SingleBlock/singleBlock'
 const LandingPage = () => {
     return(
         <div>
-            pls2
+            pls
         </div>
     )  
 }

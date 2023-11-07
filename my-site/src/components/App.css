@@ -4,3 +4,11 @@
     
     border: 1px black solid;
 }
+
+.resumeContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

@@ -37,7 +37,7 @@ const LandingPage = () => {
                 <div className="card">
                     <h1 className="col-sm">Resume</h1>
                     <div className="card-body">
-                        <a href="/resume" target="_blank" className="card-text stretched-link" rel="noopener noreferrer">
+                        <a href="/resume" className="card-text stretched-link" rel="noopener noreferrer">
                             Here is a link to my Resume.
                         </a>
                     </div>

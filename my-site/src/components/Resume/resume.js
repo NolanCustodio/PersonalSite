@@ -7,14 +7,21 @@ import resumePath from './NolanLeyCustodioResume.pdf'
 function Resume() {
 
   return (
-    <div className='resumeContainer'>
-      <Document file={resumePath}>
-        <Page 
-            pageNumber={1} 
-            renderAnnotationLayer={false}
-            renderTextLayer={false}
-        />
-      </Document>
+    <div>
+      <div className='resumeContainer'>
+        <Document file={resumePath}>
+          <Page 
+              pageNumber={1} 
+              renderAnnotationLayer={false}
+              renderTextLayer={false}
+          />
+        </Document>
+      </div>
+      <button className='btn'>
+        <a href={resumePath}>
+          Download
+        </a>
+      </button>
     </div>
   );
 }

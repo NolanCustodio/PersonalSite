@@ -5,6 +5,9 @@ import singleBlock from '../SingleBlock/singleBlock'
 const LandingPage = () => {
     return(
         <div>
+            
+            <div className='verticalSpace'/>
+
             <div>
                 {/* Intro and small detail */}
                 <h1>
@@ -15,7 +18,9 @@ const LandingPage = () => {
                 </p>
             </div>
 
-            <div className="row">
+            <div className='verticalSpace'/>
+
+            <div className="row justify-content-center">
 
                 <div className="card">
                     <h1 className="col-sm">Github</h1>
@@ -25,6 +30,8 @@ const LandingPage = () => {
                         </a>
                     </div>
                 </div>
+
+                <div className='horizontalSpace'/>
 
                 
                 <div className="card">
@@ -38,7 +45,11 @@ const LandingPage = () => {
                 
 
                 {/* Github? */}
+            
             </div>
+
+            <div className='verticalSpace'/>
+
             <div className="card">
                 <div className="row no-gutters">
                     {/* This website name/image and small description */}
@@ -55,6 +66,8 @@ const LandingPage = () => {
                     </p>
                 </div>
             </div>
+
+            <div className='verticalSpace'/>
 
             <div className="card">
                 <div className="row no-gutters">
@@ -73,6 +86,8 @@ const LandingPage = () => {
                     </p>
                 </div>
             </div>
+
+            <div className='verticalSpace'/>
 
         </div>
     )  

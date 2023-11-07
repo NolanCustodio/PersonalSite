@@ -20,7 +20,7 @@ function App() {
         <div>
             <NavBar></NavBar>
                     
-            <div className="main container">
+            <div className="content container">
                 <BrowserRouter>
                     <Routes>
                         <Route path="/" exact element={<LandingPage/>}/>

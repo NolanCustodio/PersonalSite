@@ -1,8 +1,10 @@
-.main{
-    /* display:flex;
-    align-items: center; */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
     
-    border: 1px black solid;
+    border: 1px solid #2d2d2d;
 }
 
 .resumeContainer{
@@ -11,4 +13,10 @@
     justify-content: center;
 }
 
+.horizontalSpace{
+    padding: 100px;
+}
 
+.verticalSpace{
+    padding: 100px;
+}

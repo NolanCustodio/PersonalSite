@@ -2,15 +2,13 @@ version: '3.7'
 name: personal_site
 services:
   client:
-    container_name: personal_react_site
+    container_name: client
     build:
       context: ./my-site
       dockerfile: ./Dockerfile
     volumes:
-      - ./my-site/src:/app/src
+      # - ./my-site/src:/app/src
+      - /app/node_modules
     ports:
       - 3000:3000
-    # env_file:
-    #   - ./env/frontend.env
-    environment:
-      - WATCHPACK_POLLING=true
+    restart: on-failure

@@ -1,6 +1,5 @@
 import React from 'react';
-// import { connect } from 'react-redux';
-import singleBlock from '../SingleBlock/singleBlock'
+import resumePath from '../Resume/NolanLeyCustodioResume.pdf'
 
 const LandingPage = () => {
     return(
@@ -37,7 +36,7 @@ const LandingPage = () => {
                 <div className="card">
                     <h1 className="col-sm">Resume</h1>
                     <div className="card-body">
-                        <a href="/resume" className="card-text stretched-link" rel="noopener noreferrer">
+                        <a href={resumePath} className="card-text stretched-link" target='_blank' rel="noopener noreferrer">
                             Here is a link to my Resume.
                         </a>
                     </div>

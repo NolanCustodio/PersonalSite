@@ -1,0 +1,11 @@
+version: 0.2
+phases:
+  install:
+    runtime-version:
+      docker: 20
+  build:
+    commands:
+      - docker build -t nolancustodio/personal-site-client:1
+      - docker build -t nolancustodio/personal-site-nginx:1
+
+      

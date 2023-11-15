@@ -1,9 +1,9 @@
 {
-    "AWSEBDockerrunVersion":2 ,
+    "AWSEBDockerrunVersion":3 ,
     "containerDefinitions": [
         {
             "name": "nginx",
-            "image": "nolancustodio/personal-site-nginx",
+            "image": "nolancustodio/personal-site-nginx:1",
             "hostname": "nginx",
             "essential": true,
             "portMappings": [
@@ -17,7 +17,7 @@
         },
         {
             "name": "client",
-            "image": "nolancustodio/personal-site-client",
+            "image": "nolancustodio/personal-site-client:1",
             "hostname": "client",
             "essential": false,
             "memory": 300

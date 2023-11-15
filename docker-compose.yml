@@ -1,24 +1,17 @@
 version: '3.7'
-name: personal_site
+name: personal-site
 services:
   nginx:
     container_name: nginx
     depends_on:
       - client
     restart: always
-    build:
-      context: ./nginx
-      dockerfile: ./Dockerfile
+    image: nolancustodio/personal-site-nginx:1
     ports:
-      - 80:80
+      - "80:80"
   client:
     container_name: client
-    build:
-      context: ./my-site
-      dockerfile: ./Dockerfile
+    image: nolancustodio/personal-site-client:1
     volumes:
-      # - ./my-site/src:/app/src
       - /app/node_modules
-    # ports:
-    #   - 3000:3000
     restart: on-failure

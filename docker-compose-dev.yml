@@ -1,5 +1,5 @@
 version: '3.7'
-name: personal_site
+name: personal-site
 services:
   nginx:
     container_name: nginx
@@ -10,7 +10,7 @@ services:
       context: ./nginx
       dockerfile: ./Dockerfile
     ports:
-      - 80:80
+      - '3001:3001'
   client:
     container_name: client
     build:

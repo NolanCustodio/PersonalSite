@@ -6,7 +6,7 @@ services:
     depends_on:
       - client
     restart: always
-    image: nolancustodio/personal-site-nginx:1
+    image: nolancustodio/personal-site-nginx:v2
     ports:
       - '80:80'
   client:

@@ -9,6 +9,7 @@ import LandingPage from './LandingPage/LandingPage';
 import NavBar from './NavBar/NavBar';
 import PersonalSite from './PersonalSite/PersonalSite';
 import SingleProject from './Projects/SingleProject';
+import NewsBox from './NewsBox/NewsBox';
 
 function App() {
     return(
@@ -21,6 +22,7 @@ function App() {
                         <Route path="/" exact element={<LandingPage/>}/>
                         <Route path="/site" element={<PersonalSite/>}/>
                         <Route path="/singleProject" element={<SingleProject/>}/>
+                        <Route path="/NewsBox" element={<NewsBox/>}/>
                     </Routes>
                 </BrowserRouter>
 

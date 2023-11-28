@@ -1,8 +1,10 @@
 import React from 'react';
 
+import SingleProject from '../Projects/SingleProject';
+
 const PersonalSite = () => {
     return(
-        <div>Hi</div>
+        <SingleProject/>
     )
 }
 

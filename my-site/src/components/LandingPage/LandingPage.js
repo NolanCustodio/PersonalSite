@@ -79,7 +79,10 @@ const LandingPage = () => {
                         This was a LAMP Stack Application concept that used multiple Virtual Machines<br/>
                         The project was more for teaching good techniques and tools such as:<br/>
                         RabbitMQ, MVC Model, API Calls, Cron, Linux Services, File Storage, Logging, and more<br/>
-                        <a href="https://github.com/jcs78/News-Box-Application/tree/afterMidterm" className="stretched-link" target="_blank" rel="noopener noreferrer">
+                        {/* <a href="https://github.com/jcs78/News-Box-Application/tree/afterMidterm" className="stretched-link" target="_blank" rel="noopener noreferrer">
+                            This is link to the project
+                        </a> */}
+                        <a href="/NewsBox" className="stretched-link" target="_blank" rel="noopener noreferrer">
                             This is link to the project
                         </a>
                     </p>

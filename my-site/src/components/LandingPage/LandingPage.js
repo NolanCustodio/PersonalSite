@@ -1,5 +1,6 @@
 import React from 'react';
 import resumePath from '../Resume/NolanLeyCustodioResume.pdf'
+import SingleProjectBlock from '../Projects/SingleProjectBlock';
 
 const LandingPage = () => {
     return(
@@ -46,6 +47,10 @@ const LandingPage = () => {
                 {/* Github? */}
             
             </div>
+
+            <div className='verticalSpace'/>
+            
+           <SingleProjectBlock projectName="newsbox" projectBlurb="test blurb"/>
 
             <div className='verticalSpace'/>
 

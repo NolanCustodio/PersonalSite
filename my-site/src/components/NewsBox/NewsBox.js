@@ -1,6 +1,6 @@
 import React from "react";
 
-import SingleProject from "../Projects/SingleProject";
+import SingleProject from "../Projects/SingleProjectPage.js";
 import raw from './NewsBoxInfo.js';
 
 const NewsBox = () => {

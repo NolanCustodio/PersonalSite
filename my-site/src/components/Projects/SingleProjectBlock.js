@@ -1,21 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import './singleProjectBlock.css';
+
+//Reducers
+
 const SingleProjectBlock = (props) => {
 
     return(
         <div className="card">
-            <Link to={`project/${props.projectName}`}>
+            <Link to={`project/${props.projectName}`} className="singleProjectBlock">
                 <div className="row no-gutters">
-                    {/* This website name/image and small description */}
-                    <h1 className="col-md-3 card-body">
-                        {props.projectName}
-                    </h1>
+                    <div className="col-md-4 card-body">
+                        <h1>
+                            {props.projectName}
+                        </h1>
+                    </div>
                     <p className="col-md">
                         {props.projectBlurb}
                     </p>
                 </div>
-            </Link>
+                </Link>
         </div>
     )
 }

@@ -1,0 +1,18 @@
+.title{
+    text-align: center;
+}
+
+.description{
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.technology{
+    margin: 0 auto;
+    width: 57%;
+}
+
+.singleTech{
+    margin: 2.5%;
+}

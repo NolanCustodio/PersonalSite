@@ -1,16 +1,16 @@
 version: '3.7'
 name: personal-site
 services:
-  # nginx:
-  #   container_name: nginx
-  #   depends_on:
-  #     - client
-  #   restart: always
-  #   build:
-  #     context: ./nginx
-  #     dockerfile: ./Dockerfile
-  #   ports:
-  #     - '3001:3001'
+  nginx:
+    container_name: nginx
+    depends_on:
+      - client
+    restart: always
+    build:
+      context: ./nginx
+      dockerfile: ./Dockerfile
+    ports:
+      - '3001:3001'
   client:
     container_name: client
     build:

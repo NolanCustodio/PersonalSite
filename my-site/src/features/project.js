@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialProjectState = { value: {
     projectName: 'test name',
+    projectSubtext: 'test subtext',
     projectDescription: 'test des',
     projectTechnology: 'test tech'
 }}

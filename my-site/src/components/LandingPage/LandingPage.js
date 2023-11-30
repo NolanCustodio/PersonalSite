@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 //My Files
 import resumePath from '../Resume/NolanLeyCustodioResume.pdf'
-import SingleProjectBlock from '../Projects/SingleProjectBlock';
+import SingleProjectBlock from '../Projects/Block/SingleProjectBlock';
 import ProjectsInfo from '../Projects/ProjectText';
 
 //Redux
@@ -12,7 +12,7 @@ import ProjectsInfo from '../Projects/ProjectText';
 const LandingPage = () => {
 
     const project = useSelector((state) => state.project);
-    // console.log(project);
+    // console.log(project.value);
 
     return(
         <div>
@@ -66,11 +66,11 @@ const LandingPage = () => {
 
             <div className='verticalSpace'/>
 
-            {/* <SingleProjectBlock projectName={ProjectsInfo.newsbox.projectName} projectBlurb={ProjectsInfo.newsbox.projectBlurb}/> */}
+            <SingleProjectBlock project={ProjectsInfo.newsbox}/>
 
             <div className='verticalSpace'/>
 
-            {/* <SingleProjectBlock projectName={ProjectsInfo.synchat.projectName} projectBlurb={ProjectsInfo.synchat.projectBlurb}/> */}
+            <SingleProjectBlock project={ProjectsInfo.synchat}/>
 
             <div className='verticalSpace'/>
 

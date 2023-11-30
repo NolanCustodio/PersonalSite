@@ -2,10 +2,10 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 
-import './singleProjectBlock.css';
+import './SingleProjectBlock.css';
 
 //Reducers
-import { changeProject } from "../../features/project";
+import { changeProject } from "../../../features/project";
 
 const SingleProjectBlock = (props) => {
     let project = props.project;
@@ -15,9 +15,10 @@ const SingleProjectBlock = (props) => {
     // const [currentProject, setCurrnetProject] = useState(useSelector((state) => state.project));
     const [currentProject, setCurrentProject] = useState();
 
-    function changeCurrnetProject(projectName, projectDescription, projectTechnology) {
+    function changeCurrnetProject(projectName, projectSubtext, projectDescription, projectTechnology) {
         let currentProjectInfo = {
            projectName,
+           projectSubtext,
            projectDescription,
            projectTechnology
         }
@@ -33,6 +34,7 @@ const SingleProjectBlock = (props) => {
                 onClick={() => {
                     changeCurrnetProject(
                         project.projectName,
+                        project.projectSubtext,
                         project.projectDescription,
                         project.projectTechnology
                     )

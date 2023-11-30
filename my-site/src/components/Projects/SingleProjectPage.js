@@ -1,19 +1,26 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
-const SingleProject = (props) => {
+const SingleProjectPage = () => {
+    const project = useSelector((state) => state.project.value);
+    console.log(project);
+
     return (
         <div>
-            <h1>{ props.projectName }</h1>
+            <h1>{ project.projectName }</h1>
+
+            {/* <p>{ project.projectSubtext }</p> */}
             
             <div>
-                { props.projectDescription }
+                { project.projectDescription }
             </div>
 
+            {/* make this a .map() */}
             <div>
-                { props.projectTechnology }
+                { project.projectTechnology }
             </div>
         </div>
     )
 }
 
-export default SingleProject;
+export default SingleProjectPage;

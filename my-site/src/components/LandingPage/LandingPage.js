@@ -1,15 +1,18 @@
 //Node modules
-import React from 'react';
+import { React, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 //My Files
 import resumePath from '../Resume/NolanLeyCustodioResume.pdf'
 import SingleProjectBlock from '../Projects/SingleProjectBlock';
 import ProjectsInfo from '../Projects/ProjectText';
 
-
+//Redux
 
 const LandingPage = () => {
-    // console.log(ProjectsInfo);
+
+    const project = useSelector((state) => state.project);
+    // console.log(project);
 
     return(
         <div>
@@ -58,15 +61,16 @@ const LandingPage = () => {
 
             <div className='verticalSpace'/>
             
-           <SingleProjectBlock projectName={ProjectsInfo.portfolio.projectName} projectBlurb={ProjectsInfo.portfolio.projectBlurb}/>
+            
+            <SingleProjectBlock project={ProjectsInfo.portfolio}/>
 
             <div className='verticalSpace'/>
 
-            <SingleProjectBlock projectName={ProjectsInfo.newsbox.projectName} projectBlurb={ProjectsInfo.newsbox.projectBlurb}/>
+            {/* <SingleProjectBlock projectName={ProjectsInfo.newsbox.projectName} projectBlurb={ProjectsInfo.newsbox.projectBlurb}/> */}
 
             <div className='verticalSpace'/>
 
-            <SingleProjectBlock projectName={ProjectsInfo.synchat.projectName} projectBlurb={ProjectsInfo.synchat.projectBlurb}/>
+            {/* <SingleProjectBlock projectName={ProjectsInfo.synchat.projectName} projectBlurb={ProjectsInfo.synchat.projectBlurb}/> */}
 
             <div className='verticalSpace'/>
 

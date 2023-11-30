@@ -1,26 +1,57 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux';
 
 import './singleProjectBlock.css';
 
 //Reducers
+import { changeProject } from "../../features/project";
 
 const SingleProjectBlock = (props) => {
+    let project = props.project;
+    // console.log(props.project);
+    const dispatch = useDispatch();
+
+    // const [currentProject, setCurrnetProject] = useState(useSelector((state) => state.project));
+    const [currentProject, setCurrentProject] = useState();
+
+    function changeCurrnetProject(projectName, projectDescription, projectTechnology) {
+        let currentProjectInfo = {
+           projectName,
+           projectDescription,
+           projectTechnology
+        }
+
+        setCurrentProject(currentProjectInfo);
+        dispatch(changeProject(currentProjectInfo));
+   }
 
     return(
         <div className="card">
-            <Link to={`project/${props.projectName}`} className="singleProjectBlock">
+            <Link 
+                className="singleProjectBlock"
+                onClick={() => {
+                    changeCurrnetProject(
+                        project.projectName,
+                        project.projectDescription,
+                        project.projectTechnology
+                    )
+
+                    // window.location.href = `/project/${project.projectName}`
+                }}
+                to={`/project/${project.projectName}`}
+            >
                 <div className="row no-gutters">
                     <div className="col-md-4 card-body">
                         <h1>
-                            {props.projectName}
+                            {project.projectName}
                         </h1>
                     </div>
                     <p className="col-md">
-                        {props.projectBlurb}
+                        {project.projectBlurb}
                     </p>
                 </div>
-                </Link>
+            </Link>
         </div>
     )
 }

@@ -6,6 +6,9 @@
     margin-bottom: 10%;
     margin-left: 5%;
     margin-right: 5%;
+
+    text-align: justify;
+    /* text-justify: inter-word; */
 }
 
 .technology{

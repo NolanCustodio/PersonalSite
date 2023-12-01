@@ -1,11 +1,32 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { useParams } from "react-router-dom";
 
 import "./SingleProjectPage.css"
 
 const SingleProjectPage = () => {
-    const project = useSelector((state) => state.project.value);
-    console.log(project.projectTechnology)
+    let { projectName } = useParams();
+    // console.log(typeof(projectName));
+    console.log(projectName);
+
+    const project = useSelector((state) => {
+        projectName = projectName.toLowerCase();
+
+        let rtnVal
+
+        if (projectName == "portfolio"){
+            rtnVal = state.project.value.portfolio
+        }else if (projectName == "newsbox"){
+            rtnVal = state.project.value.newsbox
+        }else if (projectName == "synchat"){
+            rtnVal = state.project.value.synchat
+        }
+        return rtnVal
+    });
+    
+    console.log(project)
+
+
 
     return (
         <div>

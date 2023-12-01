@@ -2,3 +2,12 @@
     text-decoration: none;
     color: black
 }
+
+.my-card{
+    padding: 8%;
+}
+
+.text{
+    margin: auto;
+    text-align: center;
+}

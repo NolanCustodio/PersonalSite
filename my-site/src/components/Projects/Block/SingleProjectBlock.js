@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -8,12 +8,17 @@ import './SingleProjectBlock.css';
 import { changeProject } from "../../../features/project";
 
 const SingleProjectBlock = (props) => {
-    let project = props.project;
-    // console.log(props.project);
-    const dispatch = useDispatch();
+    const project = props.project
+    console.log(project);
+
+    // useEffect(() => {
+    //     const project = props.project;
+    //     console.log(project);
+    // }, []);
+    // const dispatch = useDispatch();
 
     // const [currentProject, setCurrnetProject] = useState(useSelector((state) => state.project));
-    const [currentProject, setCurrentProject] = useState();
+    // const [currentProject, setCurrentProject] = useState();
 
     function changeCurrnetProject(projectName, projectSubtext, projectDescription, projectTechnology) {
         let currentProjectInfo = {
@@ -23,33 +28,22 @@ const SingleProjectBlock = (props) => {
            projectTechnology
         }
 
-        setCurrentProject(currentProjectInfo);
-        dispatch(changeProject(currentProjectInfo));
+        // setCurrentProject(currentProjectInfo);
+        // dispatch(changeProject(currentProjectInfo));
    }
 
     return(
-        <div className="card">
+        <div className="card my-card">
             <Link 
                 className="singleProjectBlock"
-                onClick={() => {
-                    changeCurrnetProject(
-                        project.projectName,
-                        project.projectSubtext,
-                        project.projectDescription,
-                        project.projectTechnology
-                    )
 
-                    // window.location.href = `/project/${project.projectName}`
-                }}
-                to={`/project/${project.projectName}`}
+                to={`${project.projectName}`}
             >
                 <div className="row no-gutters">
-                    <div className="col-md-4 card-body">
-                        <h1>
-                            {project.projectName}
-                        </h1>
-                    </div>
-                    <p className="col-md">
+                    <h1>
+                        {project.projectName}
+                    </h1>
+                    <p className="col-md text">
                         {project.projectBlurb}
                     </p>
                 </div>

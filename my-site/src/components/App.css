@@ -1,10 +1,15 @@
 .content {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-self: center;
     
-    border: 1px solid #2d2d2d;
+    /* border: 1px solid #2d2d2d; */
+}
+
+#root{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(87,245,243,1) 100%);
 }
 
 .resumeContainer{

@@ -16,10 +16,8 @@ const LandingPage = () => {
 
     return(
         <div>
-            
-            <div className='verticalSpace'/>
 
-            <div>
+            <div className='intro-block'>
                 <h1 className='intro'>
                     Hello, I am Nolan!
                 </h1>
@@ -27,26 +25,20 @@ const LandingPage = () => {
                     I am a developer and I greatly thank you for taking the time to visit my site.
                 </p>
             </div>
-
-            <div className='verticalSpace'/>
-
-            <div className="row justify-content-center">
-
-                <div className="row justify-content-center content">
-                    <div className="card">
-                        <h1 className="col-sm">Github</h1>
+            
+            <div className='landing-links'>
+                <div className="row justify-content-around">
+                    <div className="card my-card-landing">
+                        <h1 className="col-sm link-title">Github</h1>
                         <div className="card-body">
                             <a href="https://github.com/NolanCustodio" target="_blank" className="card-text stretched-link" rel="noopener noreferrer">
                                 Here is a link to my Github.
                             </a>
                         </div>
                     </div>
-
-                    <div className='horizontalSpace'/>
-
                     
-                    <div className="card">
-                        <h1 className="col-sm">Resume</h1>
+                    <div className="card my-card-landing">
+                        <h1 className="col-sm link-title">Resume</h1>
                         <div className="card-body">
                             <a href={resumePath} className="card-text stretched-link" target='_blank' rel="noopener noreferrer">
                                 Here is a link to my Resume.
@@ -54,26 +46,13 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </div>
-                
-
-                {/* Github? */}
-            
-            </div>
-
-            <div className='verticalSpace'/>
-            
-            
+            </div>            
+    
             <SingleProjectBlock project={projects.portfolio}/>
-
-            <div className='verticalSpace'/>
 
             <SingleProjectBlock project={projects.newsbox}/>
 
-            <div className='verticalSpace'/>
-
             <SingleProjectBlock project={projects.synchat}/>
-
-            <div className='verticalSpace'/>
 
         </div>
     )  

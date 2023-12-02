@@ -1,8 +1,26 @@
+.intro-block{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
 .intro{
 
     text-align: center;
 }
 
+.link-title{
+
+}
+
 .blurb{
+    text-align: center;
+}
+
+.my-card-landing{
+    margin: 5%;
+    padding: 5%;
+}
+
+.link-title{
     text-align: center;
 }

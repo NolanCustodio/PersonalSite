@@ -1,13 +1,29 @@
 .singleProjectBlock{
     text-decoration: none;
-    color: black
+    color: black;
 }
 
 .my-card{
-    padding: 8%;
+    padding: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 7%;
+    margin-bottom: 23%;
 }
 
-.text{
+.card-info{
+    
+}
+
+.project-blurb{
     margin: auto;
-    text-align: center;
+    text-align: right;
+}
+
+@media only screen and (max-width: 767px){
+    .card-title{
+        margin-left: 30%;
+    }
+
+    
 }

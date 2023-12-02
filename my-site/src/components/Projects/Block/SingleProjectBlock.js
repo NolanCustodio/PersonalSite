@@ -35,17 +35,17 @@ const SingleProjectBlock = (props) => {
     return(
         <div className="card my-card">
             <Link 
-                className="singleProjectBlock"
+                className="singleProjectBlock stretched-link"
 
                 to={`${project.projectName}`}
             >
-                <div className="row no-gutters">
-                    <h1>
+                <div className="row no-gutters card-info">
+                    <h1 className="card-title">
                         {project.projectName}
                     </h1>
-                    <p className="col-md text">
+                    <div className="col-md project-blurb">
                         {project.projectBlurb}
-                    </p>
+                    </div>
                 </div>
             </Link>
         </div>

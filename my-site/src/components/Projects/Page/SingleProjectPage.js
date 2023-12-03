@@ -31,7 +31,7 @@ const SingleProjectPage = () => {
     return (
         <div>
             <div className="title">
-                <h1 className="display-1">
+                <h1 className="display-1 title-text">
                     { project.projectName }
                 </h1>
 

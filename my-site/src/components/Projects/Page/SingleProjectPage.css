@@ -19,3 +19,19 @@
 .singleTech{
     margin: 2.5%;
 }
+
+@media only screen and (max-width: 400px){
+    .title-text{
+        font-size: 300%;
+    }
+
+    .technology{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1008px){
+    .technology{
+        width: 100%;
+    }
+}

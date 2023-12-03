@@ -6,8 +6,8 @@ import './NavBar.css';
 const NavBar = () => {
     
     return(
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="navbar-collapse" id="navbarSupportedContent">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light my-navbar">
+            <div className="navbar-collapse nav-items" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
                         <a className="nav-link" href="/">Home</a>

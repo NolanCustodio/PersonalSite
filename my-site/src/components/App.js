@@ -9,6 +9,7 @@ import './App.css';
 import LandingPage from './LandingPage/LandingPage';
 import NavBar from './NavBar/NavBar';
 import SingleProjectPage from './Projects/Page/SingleProjectPage';
+import ScrollToTop from './Navigation/ScrollToTop';
 
 import ProjectsInfo from './Projects/ProjectText';
 import { changeProject } from '../features/project';
@@ -26,8 +27,9 @@ function App() {
         <div>
             <NavBar></NavBar>
                     
-            <div className="content container">
+            <div className="content">
                 <BrowserRouter>
+                    <ScrollToTop/>
                     <Routes>
                         <Route path="/" exact element={<LandingPage/>}/>
                         <Route path="/:projectName" element={<SingleProjectPage/>}/>

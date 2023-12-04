@@ -31,7 +31,7 @@ const LandingPage = () => {
                     <div className="card my-card-landing">
                         <h1 className="col-sm link-title">Github</h1>
                         <div className="card-body">
-                            <a href="https://github.com/NolanCustodio" target="_blank" className="card-text stretched-link" rel="noopener noreferrer">
+                            <a href="https://github.com/NolanCustodio" target="_blank" className="card-text stretched-link resource-link" rel="noopener noreferrer">
                                 Here is a link to my Github.
                             </a>
                         </div>
@@ -40,7 +40,7 @@ const LandingPage = () => {
                     <div className="card my-card-landing">
                         <h1 className="col-sm link-title">Resume</h1>
                         <div className="card-body">
-                            <a href={resumePath} className="card-text stretched-link" target='_blank' rel="noopener noreferrer">
+                            <a href={resumePath} className="card-text stretched-link resource-link" target='_blank' rel="noopener noreferrer">
                                 Here is a link to my Resume.
                             </a>
                         </div>

@@ -4,16 +4,14 @@
     justify-content: center;
     align-self: center;
     
+    margin-left: 7%;
+    margin-right: 7%;
     /* border: 1px solid #2d2d2d; */
 }
 
-#root{
-    background: rgb(0,167,14);
-    background: linear-gradient(0deg, rgba(0,167,14,1) 0%, rgba(255,255,255,1) 100%);
-}
-
-.main-body{
-    background: rgb(0,167,14);
+/* for all of the background divs */
+#root, .main-body{
+    background-color: whitesmoke
 }
 
 .resumeContainer{

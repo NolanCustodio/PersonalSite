@@ -1,6 +1,7 @@
 .singleProjectBlock{
     text-decoration: none;
-    color: black;
+    color:  #236938 ;
+    font-weight: 600;
 }
 
 .my-card{
@@ -9,10 +10,15 @@
     margin-right: 4%;
     margin-top: 7%;
     margin-bottom: 23%;
+
+    border: solid  #109037 5px;
+    background-color:  #66ea8e;
+
+    transition: transform 0.3s ease 0s;
 }
 
-.card-info{
-    
+.my-card:hover{
+    transform: translateY(-10px);
 }
 
 .project-blurb{
@@ -21,9 +27,19 @@
 }
 
 @media only screen and (max-width: 767px){
-    .card-title{
-        margin-left: 30%;
+
+    .card-info{
+        text-align: center;
     }
 
-    
+    .card-title{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    .project-blurb{
+        text-align: center;
+    }
 }

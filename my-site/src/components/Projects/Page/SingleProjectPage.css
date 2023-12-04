@@ -1,5 +1,30 @@
+/* .page{
+    color: white;
+} */
+
 .title{
+    padding-top: 2.5%;
     text-align: center;
+    align-items: center;
+}
+
+.title-text-button{
+    border: solid lightgray 1px;
+    width: 70%;
+    display: inline-block;
+
+    text-decoration: none;
+    color: black;
+
+    transition: transform 0.3s ease 0s;
+}
+
+.title-text-button:hover{
+    transform: translateY(-10px);
+}
+
+.project-subtext{
+    padding-top: 2%;
 }
 
 .description{
@@ -8,25 +33,48 @@
     margin-right: 5%;
 
     text-align: justify;
+    line-height: 200%;
     /* text-justify: inter-word; */
+    
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    padding-left: 3%;
+    padding-right: 3%;
+
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+}
+
+.tools-title{
+    text-align: center;
 }
 
 .technology{
     margin: 0 auto;
     width: 57%;
+    padding-bottom: 20%;
 }
 
 .singleTech{
     margin: 2.5%;
 }
 
-@media only screen and (max-width: 400px){
+/* for mobile screen sizes */
+
+@media only screen and (max-width: 615px){
     .title-text{
         font-size: 300%;
     }
 
     .technology{
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .description{
+        line-height: 170%;
     }
 }
 

@@ -8,8 +8,13 @@
     text-align: center;
 }
 
-.link-title{
+/* .link-title{
 
+} */
+
+.resource-link{
+    text-decoration: none;
+    color: black;
 }
 
 .blurb{
@@ -19,6 +24,11 @@
 .my-card-landing{
     margin: 5%;
     padding: 5%;
+    transition: transform 0.3s ease 0s;
+}
+
+.my-card-landing:hover{
+    transform: translateY(-10px);
 }
 
 .link-title{

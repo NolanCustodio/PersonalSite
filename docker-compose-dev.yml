@@ -10,7 +10,8 @@ services:
       context: ./nginx
       dockerfile: ./Dockerfile
     ports:
-      - '3001:3001'
+      # - '3001:3001'
+      - '80:80'
   client:
     container_name: client
     build:
@@ -19,6 +20,6 @@ services:
     volumes:
       - ./my-site/src:/app/src
       - /app/node_modules
-    ports:
-      - 3000:3000
+    # ports:
+    #   - 3000:3000
     restart: on-failure

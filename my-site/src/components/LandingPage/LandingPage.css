@@ -4,26 +4,47 @@
 }
 
 .intro{
-
     text-align: center;
-}
-
-/* .link-title{
-
-} */
-
-.resource-link{
-    text-decoration: none;
-    color: black;
 }
 
 .blurb{
     text-align: center;
 }
 
+.landing-links{
+    border-top: solid #109037 2px;
+    border-bottom: solid #109037 2px;
+}
+
+.section-title{
+    text-align: center;
+
+    padding-top: 5%;
+}
+
+.link-title{
+    text-align: center;
+    color: black;  
+}
+
+.resource-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.resource-link:hover{
+    text-decoration: none;
+    color: black;
+}
+
 .my-card-landing{
     margin: 5%;
     padding: 5%;
+
+    border: solid  #109037 5px;
+    background-color:  #a4e7b8; 
+
     transition: transform 0.3s ease 0s;
 }
 
@@ -31,6 +52,3 @@
     transform: translateY(-10px);
 }
 
-.link-title{
-    text-align: center;
-}

@@ -1,4 +1,24 @@
-.nav-items{
-    justify-content: center;
-    align-self: center;
+.my-navbar{
+    display: block;
+}
+
+.nav-item-link{
+    text-decoration: none;
+    color: black;
+}
+
+.my-email{
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+@media only screen and (max-width: 400px){
+    .nav-item{
+        margin: auto;
+        vertical-align: middle;
+    }
+
+    .my-email{
+        margin: auto;
+    }
 }

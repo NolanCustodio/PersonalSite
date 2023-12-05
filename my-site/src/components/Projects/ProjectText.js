@@ -9,8 +9,8 @@ const ProjectsInfo = {
             `Docker with docker-compose to create a multi-container application`,
             `React for all of the front-end as well as tools such as redux and routing`,
             `Nginx handles incoming HTTP(S) requests as a proxy`,
-            `DigitalOcean as a hosting platform was much more friendly`,
-            `AWS did offer a lot of tools, which I did learn, but did not appeal to me`,
+            `DigitalOcean as a hosting platform was much more appealing`,
+            `AWS did offer a lot of tools, which I did learn, but did not feel like the right fit for this project`,
 
         ]
     },

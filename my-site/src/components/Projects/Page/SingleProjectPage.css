@@ -9,7 +9,8 @@
 }
 
 .title-text-button{
-    border: solid lightgray 1px;
+    border: solid  #109037 5px;
+    background-color:  #a4e7b8;
     width: 70%;
     display: inline-block;
 
@@ -42,8 +43,8 @@
     padding-left: 3%;
     padding-right: 3%;
 
-    border-top: solid black 1px;
-    border-bottom: solid black 1px;
+    border-top: solid #109037 2px;
+    border-bottom: solid #109037 2px;
 }
 
 .tools-title{
@@ -61,12 +62,7 @@
 }
 
 /* for mobile screen sizes */
-
-@media only screen and (max-width: 615px){
-    .title-text{
-        font-size: 300%;
-    }
-
+@media only screen and (max-width: 1008px){
     .technology{
         width: 100%;
     }
@@ -78,8 +74,24 @@
     }
 }
 
-@media only screen and (max-width: 1008px){
+@media only screen and (max-width: 620px){
+    .title-text{
+        font-size: 300%;
+    }
+
     .technology{
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 340px){
+    .title-text{
+        font-size: 200%;
+    }
+}
+
+
+
+
+
+

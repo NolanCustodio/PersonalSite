@@ -1,7 +1,9 @@
 .singleProjectBlock{
     text-decoration: none;
-    color:  #236938 ;
-    font-weight: 600;
+}
+
+.singleProjectBlock:hover{
+    text-decoration: none;
 }
 
 .my-card{
@@ -12,18 +14,26 @@
     margin-bottom: 23%;
 
     border: solid  #109037 5px;
-    background-color:  #66ea8e;
+    background-color:  #a4e7b8;
 
     transition: transform 0.3s ease 0s;
 }
 
 .my-card:hover{
     transform: translateY(-10px);
+    text-decoration: none;
+}
+
+.card-title{
+    text-decoration: none;
+    color: black;
 }
 
 .project-blurb{
     margin: auto;
     text-align: right;
+    color:  black;
+    font-weight: 500;
 }
 
 @media only screen and (max-width: 767px){

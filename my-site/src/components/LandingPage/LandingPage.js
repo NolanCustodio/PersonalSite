@@ -27,6 +27,7 @@ const LandingPage = () => {
             </div>
             
             <div className='landing-links'>
+                <h3 className='section-title'>My Resources</h3>
                 <div className="row justify-content-around">
                     <div className="card my-card-landing">
                         <h1 className="col-sm link-title">Github</h1>
@@ -47,13 +48,15 @@ const LandingPage = () => {
                     </div>
                 </div>
             </div>            
-    
-            <SingleProjectBlock project={projects.portfolio}/>
+            <div>
+                <h2 className='section-title'>Projects</h2>
 
-            <SingleProjectBlock project={projects.newsbox}/>
+                <SingleProjectBlock project={projects.portfolio}/>
 
-            <SingleProjectBlock project={projects.synchat}/>
+                <SingleProjectBlock project={projects.newsbox}/>
 
+                <SingleProjectBlock project={projects.synchat}/>
+            </div>
         </div>
     )  
 }

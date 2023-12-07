@@ -32,6 +32,7 @@ function App() {
                     <ScrollToTop/>
                     <Routes>
                         <Route path="/" exact element={<LandingPage/>}/>
+                        
                         <Route path="/:projectName" element={<SingleProjectPage/>}/>
                        
                     </Routes>

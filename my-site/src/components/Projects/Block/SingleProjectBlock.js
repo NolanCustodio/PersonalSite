@@ -9,7 +9,7 @@ import { changeProject } from "../../../features/project";
 
 const SingleProjectBlock = (props) => {
     const project = props.project
-    console.log(project);
+    
 
     // useEffect(() => {
     //     const project = props.project;

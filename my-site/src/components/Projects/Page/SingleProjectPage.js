@@ -11,22 +11,24 @@ const SingleProjectPage = () => {
     const project = useSelector((state) => {
         projectName = projectName.toLowerCase();
 
-        let rtnVal
+        let rtnVal = "none"
 
-        if (projectName == "portfolio"){
+        if (projectName === "portfolio"){
             rtnVal = state.project.value.portfolio
-        }else if (projectName == "newsbox"){
+        }else if (projectName === "newsbox"){
             rtnVal = state.project.value.newsbox
-        }else if (projectName == "synchat"){
+        }else if (projectName === "synchat"){
             rtnVal = state.project.value.synchat
         }
+
+        if (rtnVal === "none"){
+            window.location.href = "/"
+        }
+
         return rtnVal
     });
+
     
-    console.log(project)
-    console.log(project.projectGithub);
-
-
 
     return (
         <div className="page">
@@ -50,7 +52,11 @@ const SingleProjectPage = () => {
                 <h3 className="tools-title">Tools and Tech</h3>
                 <ul>
                     { 
-                        project.projectTechnology.map(singleTool => <li className="singleTech"> {singleTool} </li>)
+                        project.projectTechnology.map(
+                                (singleTool, a) => {
+                                   return <li className="singleTech" key={a}> {singleTool} </li>
+                        }
+                        )
                     }
                 </ul>
             </div>

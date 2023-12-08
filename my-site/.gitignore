@@ -12,7 +12,7 @@
 /build
 
 #nginx
-/nginx
+# /nginx
 
 # misc
 .DS_Store

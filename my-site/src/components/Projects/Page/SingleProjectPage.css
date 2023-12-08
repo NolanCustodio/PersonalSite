@@ -1,7 +1,3 @@
-/* .page{
-    color: white;
-} */
-
 .title{
     padding-top: 2.5%;
     text-align: center;
@@ -35,7 +31,6 @@
 
     text-align: justify;
     line-height: 200%;
-    /* text-justify: inter-word; */
     
     padding-top: 10%;
     padding-bottom: 10%;

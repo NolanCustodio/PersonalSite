@@ -6,12 +6,13 @@ services:
     depends_on:
       - client
     restart: always
-    image: nolancustodio/personal-site-nginx:v2
+    image: nolancustodio/personal-site-nginx:latest
     ports:
       - '80:80'
   client:
     container_name: client
-    image: nolancustodio/personal-site-client:1
+    image: nolancustodio/personal-site-client:latest
     volumes:
+      - ./my-site/src:/app/src
       - /app/node_modules
     restart: on-failure

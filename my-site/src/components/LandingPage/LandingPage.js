@@ -1,6 +1,6 @@
 //Node modules
-import { React, useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { React } from 'react';
+import { useSelector } from 'react-redux';
 
 //My Files
 import resumePath from '../Resume/NolanLeyCustodioResume.pdf'
@@ -11,8 +11,6 @@ import './LandingPage.css'
 const LandingPage = () => {
 
     const projects = useSelector((state) => state.project.value);
-    // console.log(projects.portfolio);
-
 
     return(
         <div>

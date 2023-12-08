@@ -2,7 +2,7 @@ FROM node:18.18-alpine as build
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY package.json package.json
 
 RUN npm install
 RUN npm update

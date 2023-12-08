@@ -1,7 +1,7 @@
 //Node Modules
-import React, {useEffect} from 'react';
+import React from 'react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 
 //Components
@@ -17,11 +17,6 @@ import { changeProject } from '../features/project';
 function App() {
     const dispatch = useDispatch();
     dispatch(changeProject(ProjectsInfo));
-
-    // useEffect (() => {
-    //     dispatch(changeProject(ProjectsInfo));
-    //     // console.log(ProjectsInfo);
-    // }, []);
 
     return(
         <div>

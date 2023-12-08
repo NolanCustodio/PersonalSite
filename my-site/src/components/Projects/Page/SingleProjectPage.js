@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React from "react";
+import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 
 import "./SingleProjectPage.css"
 
 const SingleProjectPage = () => {
     let { projectName } = useParams();
-    // console.log(typeof(projectName));
 
     const project = useSelector((state) => {
         projectName = projectName.toLowerCase();

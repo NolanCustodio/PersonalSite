@@ -11,14 +11,23 @@ const ProjectsInfo = {
             hosted on a DigitalOcean Droplet. First, the more robust container has Node 
             running, builds my React project, and uses Nginx to set a server to listen for 
             incoming requests. I wanted to practice using more than 1 container and start 
-            using a proxy server to handle incoming internet traffic. Leading into the second 
-            container, this project was much more of an introduction to Nginx to get a better 
+            using a proxy server to handle incoming internet traffic. Which leads into the second 
+            container, this project was an introduction to Nginx to get a better 
             feel while using this tool. For now, the Nginx container only has the one job of handling 
-            incoming users but I also would like to use more features in later projects like Synchat. 
+            incoming users but I also would like to learn things such as load balancing. 
             Cloudflare was used to secure all connections and provides an SSL. I did look into hosting on 
             AWS and was able to get the project up and running there, but saw that DigitalOcean offered 
             more of what I was looking for. 
         `,
+        newProjectDescription:[
+            `Infrastructure: This site is running on a DigitalOcean Droplet that uses 
+            2 docker containers, 1 node with React and 1 Nginx, to handle creating the 
+            pages and navigation. In order to keep your connection to the site secure I 
+            am proxying through Cloudflare which provides an SSL certificate.`,
+            `Purpose: I am continuously updating this website whenever I create new 
+            projects or my current projects have been updated substantially.`
+
+        ],
         'projectTechnology':[
             `Docker with docker-compose to create a multi-container application`,
             `React for all of the front-end as well as tools such as redux and routing`,

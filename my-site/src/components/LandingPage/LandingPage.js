@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 //My Files
 import resumePath from '../Resume/NolanLeyCustodioResume.pdf'
 import SingleProjectBlock from '../Projects/Block/SingleProjectBlock';
+import SingleResource from '../Resources/SingleResource';
 
 import './LandingPage.css'
 
@@ -27,23 +28,9 @@ const LandingPage = () => {
             <div className='landing-links'>
                 <h3 className='section-title'>My Resources</h3>
                 <div className="row justify-content-around">
-                    <div className="card my-card-landing">
-                        <h1 className="col-sm link-title">Github</h1>
-                        <div className="card-body">
-                            <a href="https://github.com/NolanCustodio" target="_blank" className="card-text stretched-link resource-link" rel="noopener noreferrer">
-                                Here is a link to my Github.
-                            </a>
-                        </div>
-                    </div>
+                    <SingleResource link="https://github.com/NolanCustodio" name="Github"/>
                     
-                    <div className="card my-card-landing">
-                        <h1 className="col-sm link-title">Resume</h1>
-                        <div className="card-body">
-                            <a href={resumePath} className="card-text stretched-link resource-link" target='_blank' rel="noopener noreferrer">
-                                Here is a link to my Resume.
-                            </a>
-                        </div>
-                    </div>
+                    <SingleResource link={resumePath} name="Resume"/>
                 </div>
             </div>            
             <div>

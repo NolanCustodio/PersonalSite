@@ -2,6 +2,8 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 
+import DescriptionBlock from "./Description/DescriptionBlock";
+
 import "./SingleProjectPage.css"
 
 const SingleProjectPage = () => {
@@ -27,7 +29,7 @@ const SingleProjectPage = () => {
         return rtnVal
     });
 
-    
+    console.log(project.newProjectDescription);
 
     return (
         <div className="page">
@@ -42,9 +44,14 @@ const SingleProjectPage = () => {
 
                 <p className="project-subtext">{ project.projectSubtext }</p>
             </div>
+
             
             <div className="description">
+                <h2>Description</h2>
+
                 { project.projectDescription }
+
+                <DescriptionBlock/>
             </div>
 
             <div className="technology">

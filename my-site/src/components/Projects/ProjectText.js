@@ -19,15 +19,17 @@ const ProjectsInfo = {
             AWS and was able to get the project up and running there, but saw that DigitalOcean offered 
             more of what I was looking for. 
         `,
-        newProjectDescription:[
-            `Infrastructure: This site is running on a DigitalOcean Droplet that uses 
-            2 docker containers, 1 node with React and 1 Nginx, to handle creating the 
-            pages and navigation. In order to keep your connection to the site secure I 
-            am proxying through Cloudflare which provides an SSL certificate.`,
-            `Purpose: I am continuously updating this website whenever I create new 
-            projects or my current projects have been updated substantially.`
+        newProjectDescription:
+            {
+                Infrastructure: `This site is running on a DigitalOcean Droplet that uses 
+                2 docker containers, 1 node with React and 1 Nginx, to handle creating the 
+                pages and navigation. In order to keep your connection to the site secure I 
+                am proxying through Cloudflare which provides an SSL certificate.`,
+                Purpose: `I am continuously updating this website whenever I create new 
+                projects or my current projects have been updated substantially.`
+            }
 
-        ],
+        ,
         'projectTechnology':[
             `Docker with docker-compose to create a multi-container application`,
             `React for all of the front-end as well as tools such as redux and routing`,

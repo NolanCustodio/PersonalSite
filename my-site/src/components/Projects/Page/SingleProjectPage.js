@@ -29,8 +29,6 @@ const SingleProjectPage = () => {
         return rtnVal
     });
 
-    console.log(project.newProjectDescription);
-
     return (
         <div className="page">
             <div className="title">
@@ -50,8 +48,12 @@ const SingleProjectPage = () => {
                 <h2>Description</h2>
 
                 { project.projectDescription }
-
-                <DescriptionBlock/>
+                
+                {Object.keys(project.newProjectDescription).map((singleTopicTitle, a) => {
+                    
+                    return <DescriptionBlock title={singleTopicTitle} key={a}/>
+                })}
+                
             </div>
 
             <div className="technology">

@@ -15,7 +15,7 @@ const ProjectsInfo = {
             container, this project was an introduction to Nginx to get a better 
             feel while using this tool. For now, the Nginx container only has the one job of handling 
             incoming users but I also would like to learn things such as load balancing. 
-            Cloudflare was used to secure all connections and provides an SSL. I did look into hosting on 
+            Cloudflare was used to secure all connections and provides an SSL certificate. I did look into hosting on 
             AWS and was able to get the project up and running there, but saw that DigitalOcean offered 
             more of what I was looking for. 
         `,

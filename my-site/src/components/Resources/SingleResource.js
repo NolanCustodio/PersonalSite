@@ -8,7 +8,7 @@ const SingleResource = (props) => {
             <h1 className="col-sm link-title">{resrouceName}</h1>
             <div className="card-body">
                 <a href={resourceLink} target="_blank" className="card-text stretched-link resource-link" rel="noopener noreferrer">
-                    Here is a link to my {resrouceName}.
+                    Link to my {resrouceName}.
                 </a>
             </div>
         </div>

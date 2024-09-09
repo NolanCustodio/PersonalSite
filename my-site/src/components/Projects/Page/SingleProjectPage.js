@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 
-import DescriptionBlock from "./Description/DescriptionBlock";
+// import DescriptionBlock from "./Description/DescriptionBlock";
 
 import "./SingleProjectPage.css"
 
@@ -29,6 +29,8 @@ const SingleProjectPage = () => {
         return rtnVal
     });
 
+    console.log(project);
+
     return (
         <div className="page">
             <div className="title">
@@ -49,10 +51,10 @@ const SingleProjectPage = () => {
 
                 { project.projectDescription }
                 
-                {Object.keys(project.newProjectDescription).map((singleTopicTitle, a) => {
+                {/* {Object.keys(project.newProjectDescription).map((singleTopicTitle, a) => {
                     
                     return <DescriptionBlock title={singleTopicTitle} key={a}/>
-                })}
+                })} */}
                 
             </div>
 

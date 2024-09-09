@@ -20,13 +20,13 @@ const LandingPage = () => {
                 <h1 className='intro'>
                     Hello, I am Nolan!
                 </h1>
-                <p className='blurb'>
+                {/* <p className='blurb'>
                     I am a developer and I greatly thank you for taking the time to visit my site.
-                </p>
+                </p> */}
             </div>
             
             <div className='landing-links'>
-                <h3 className='section-title'>My Resources</h3>
+                <h3 className='section-title'>My Information</h3>
                 <div className="row justify-content-around">
                     <SingleResource link="https://github.com/NolanCustodio" name="Github"/>
                     

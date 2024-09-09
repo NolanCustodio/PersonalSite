@@ -5,7 +5,7 @@ import './SingleProjectBlock.css';
 
 const SingleProjectBlock = (props) => {
     const project = props.project
-
+    
     return(
         <div className="card my-card">
             <Link 

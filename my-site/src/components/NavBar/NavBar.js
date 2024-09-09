@@ -25,6 +25,10 @@ const NavBar = () => {
                         <a className="dropdown-item" href="/Synchat">Synchat</a>
                         
                     </div>
+                    
+                </li>
+                <li className="nav-item active">
+                    <a className="nav-link nav-item-link" href='/test'>test</a>    
                 </li>
                 <li className="form-inline my-email">
                     custodionolan@gmail.com

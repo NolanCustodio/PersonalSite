@@ -5,6 +5,7 @@
     margin-left: 7%;
     margin-right: 7%;
 
+    /* max-height: 100px; */
 }
 
 /* for all of the background divs */
@@ -15,20 +16,20 @@
     ); */
 }
 
-.horizontalSpace{
+/* .horizontalSpace{
     padding: 100px;
 }
 
 .verticalSpace{
     padding: 100px;
-}
+} */
 
 .my-card{
     padding: 5%;
-    margin-left: 4%;
+    /* margin-left: 4%;
     margin-right: 4%;
     margin-top: 7%;
-    margin-bottom: 23%;
+    margin-bottom: 23%; */
 
     border: solid  #109037 5px;
     background-color:  #a4e7b8;

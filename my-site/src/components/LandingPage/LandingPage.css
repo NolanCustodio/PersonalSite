@@ -41,6 +41,8 @@
 .my-card-landing{
     margin: 5%;
     padding: 5%;
+    
+    max-width: 45%;
 
     border: solid  #109037 5px;
     background-color:  #a4e7b8; 

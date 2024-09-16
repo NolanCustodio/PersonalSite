@@ -11,7 +11,7 @@ import NavBar from './NavBar/NavBar';
 import SingleProjectPage from './Projects/Page/SingleProjectPage';
 import ScrollToTop from './Navigation/ScrollToTop';
 
-import Overlay from './ProjectOverlay/overlay';
+import Overlay from './ProjectOverlay/Overlay';
 
 import ProjectsInfo from './Projects/ProjectText';
 import { changeProject } from '../features/project';

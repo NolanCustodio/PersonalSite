@@ -1,0 +1,9 @@
+
+.test-box{
+    border: black 1px solid;
+    /* display: flex; */
+}
+
+.landing-external-links{
+    max-width: 50%;
+}

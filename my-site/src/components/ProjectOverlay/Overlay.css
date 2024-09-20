@@ -1,9 +1,11 @@
 
-.test-box{
-    border: black 1px solid;
-    /* display: flex; */
+.main-card{
+    display: flex;
+    text-align: center;
+    /* justify-content: space-between; */
 }
 
 .landing-external-links{
-    max-width: 50%;
+    width: 50%;
+    justify-content: space-between;
 }

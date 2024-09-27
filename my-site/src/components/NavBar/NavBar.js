@@ -28,7 +28,7 @@ const NavBar = () => {
                     
                 </li>
                 <li className="nav-item active">
-                    <a className="nav-link nav-item-link" href='/test'>test</a>    
+                    <a className="nav-link nav-item-link" href='/Overlay'>Overlay</a>    
                 </li>
                 <li className="form-inline my-email">
                     custodionolan@gmail.com

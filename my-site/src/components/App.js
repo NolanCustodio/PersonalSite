@@ -32,7 +32,7 @@ function App() {
                         
                         <Route path="/:projectName" element={<SingleProjectPage/>}/>
 
-                        <Route path="/test" element={<Overlay/>}/>
+                        <Route path="/Overlay" element={<Overlay/>}/>
                        
                     </Routes>
                 </BrowserRouter>

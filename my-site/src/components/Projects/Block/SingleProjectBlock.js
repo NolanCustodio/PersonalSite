@@ -1,14 +1,19 @@
-import React  from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import './SingleProjectBlock.css';
 
 const SingleProjectBlock = (props) => {
     const project = props.project
+
+    function setSingleProjectOverlay(project){
+        
+    }
     
     return(
         <div className="card my-card">
-            <Link 
+            <Link
                 className="singleProjectBlock stretched-link"
 
                 to={`${project.projectName}`}

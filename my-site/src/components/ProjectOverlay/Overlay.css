@@ -29,5 +29,7 @@
     padding: 5%;
     max-height: 500px;
     border: solid black 1px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
+
+    display: flex;
 }

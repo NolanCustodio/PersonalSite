@@ -31,6 +31,8 @@ function App() {
                         <Route path="/" exact element={<LandingPage/>}/>
                         
                         <Route path="/:projectName" element={<SingleProjectPage/>}/>
+                        <Route path="/Overlay/:projectName" element={<SingleProjectPage/>}/>
+
 
                         <Route path="/Overlay" element={<Overlay/>}/>
                        

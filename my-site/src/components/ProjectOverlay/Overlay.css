@@ -1,8 +1,16 @@
 
-.main-card{
+.card-top{
     display: flex;
     text-align: center;
     /* justify-content: space-between; */
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.card-bottom{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
     padding-top: 3%;
     padding-bottom: 3%;
 }

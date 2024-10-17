@@ -4,13 +4,13 @@ import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 
 import App from './components/App';
-// import {projectReducer, projectCounterReducer} from './features/project'
-import { projectCounterReducer } from './features/project'
+import projectReducer from './features/project'
+import projectCounterReducer from './features/projectCounter'
 
 
 const store = configureStore({
   reducer: {
-    // project: projectReducer,
+    project: projectReducer,
     projectCounter: projectCounterReducer
   }
 })

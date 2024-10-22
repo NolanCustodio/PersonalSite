@@ -6,11 +6,11 @@
         value: 0
     },
     reducers:{
-        changeValue:(state, action) => {
+        changeCount:(state, action) => {
             state.value = action.payload;
         }
     }
  })
 
- export const { changeValue } = projectCounterSlice.actions;
+ export const { changeCount } = projectCounterSlice.actions;
  export default projectCounterSlice.reducer;

@@ -14,22 +14,6 @@ const projectSlice = createSlice({
     }
 });
 
-// const projectCounterSlice = createSlice({
-//     name: "projectCounter",
-//     initialState: {value: 0},
-//     reducers:{
-//         changeProjectCount: (state, action) => {
-//             state.value = action.payload;
-//         }
-//     }
-// })
-
 export const { changeProject } = projectSlice.actions;
 
 export default projectSlice.reducer;
-
-// export const { changeProjectCount } = projectCounterSlice.actions;
-
-// export default projectCounterSlice.reducer;
-
-// export {projectSlice.reducer, }

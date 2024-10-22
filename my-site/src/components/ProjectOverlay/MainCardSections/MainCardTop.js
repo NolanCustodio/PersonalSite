@@ -1,9 +1,11 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 
 import SingleResource from '../../Resources/SingleResource';
 import resumePath from '../../Resume/NolanLeyCustodioResume.pdf';
 import SingleProjectBlock from '../../Projects/Block/SingleProjectBlock';
+
+import { changeCount } from "../../../features/projectCounter";
 
 const MainCardTop = () =>{
 
@@ -11,8 +13,11 @@ const MainCardTop = () =>{
 
     const projects = useSelector((state) => state.project.value);
 
-    // const projectCounter = useSelector(state) => state.
+    const projectCount = useSelector((state) => state.projectCounter.value);
+    console.log(projectCount);
 
+    const dispatch = useDispatch();
+    dispatch(changeCount(1));
 
     const currentProject = (projectIndex) => {
         switch(projectIndex){

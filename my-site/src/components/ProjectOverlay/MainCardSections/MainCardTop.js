@@ -7,17 +7,21 @@ import SingleProjectBlock from '../../Projects/Block/SingleProjectBlock';
 
 import { changeCount } from "../../../features/projectCounter";
 
+import "./MainCard.css"
+
 const MainCardTop = () =>{
 
     const [projectIndex, setProjectIndex] = useState(0);
 
     const projects = useSelector((state) => state.project.value);
 
-    const projectCount = useSelector((state) => state.projectCounter.value);
-    console.log(projectCount);
 
-    const dispatch = useDispatch();
-    dispatch(changeCount(1));
+    // !!!!!!!!!!!
+    // const projectCount = useSelector((state) => state.projectCounter.value);
+    // console.log(projectCount);
+
+    // const dispatch = useDispatch();
+    // dispatch(changeCount(1));
 
     const currentProject = (projectIndex) => {
         switch(projectIndex){
@@ -57,23 +61,25 @@ const MainCardTop = () =>{
                 </div>
             </div>
             <div className='landing-right'>
-                <div className='scrolling-project-container'>
-                    <div className='project-nav-buttons'>
-                        <button className='btn btn-primary' onClick={() =>{
-                            decrementState();
-                        }}
-                        >{`<`}</button>
+                <h2>Projects</h2>
+
+                    <div className='scrolling-project-container'>
+                        <div className='project-nav-buttons nav-left'>
+                            <button className='btn btn-primary' onClick={() =>{
+                                decrementState();
+                            }}
+                            >{`<`}</button>
+                        </div>
+                        <div className="card-container">
+                            {currentProject(projectIndex)}
+                        </div>
+                        <div className='project-nav-buttons nav-right'>
+                            <button className='btn btn-primary' onClick={() => {
+                                incrementState();
+                            }}>{`>`}</button>
+                        </div>
                     </div>
-                    <div>
-                        <h2>Projects</h2>
-                        {currentProject(projectIndex)}
-                    </div>
-                    <div className='project-nav-buttons'>
-                        <button className='btn btn-primary' onClick={() => {
-                            incrementState();
-                        }}>{`>`}</button>
-                    </div>
-                </div>
+
             </div>
         </div>
     )

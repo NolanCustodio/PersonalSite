@@ -26,17 +26,7 @@
     padding: 100px;
 } */
 
-.my-card{
-    padding: 5%;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: 7%;
 
-    border: solid  #109037 5px;
-    background-color:  #a4e7b8; 
-
-    transition: transform 0.3s ease 0s;
-}
 
 .my-card:hover{
     transform: translateY(-10px);

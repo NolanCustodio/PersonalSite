@@ -18,6 +18,16 @@
     font-weight: 500;
 }
 
+.my-card{
+    width: 80%;
+    height: 80%;
+
+    border: solid  #109037 5px;
+    background-color:  #a4e7b8; 
+
+    transition: transform 0.3s ease 0s;
+}
+
 /* @media only screen and (max-width: 767px){
 
     .card-info{

@@ -18,7 +18,7 @@ const SingleProjectBlock = (props) => {
 
                 to={`${project.projectName}`}
             >
-                <div className="row no-gutters card-info">
+                <div className="row no-gutters">
                     <h1 className="card-title">
                         {project.projectName}
                     </h1>

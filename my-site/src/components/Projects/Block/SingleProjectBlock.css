@@ -1,5 +1,6 @@
 .singleProjectBlock{
     text-decoration: none;
+    width: 92%;
 }
 
 .singleProjectBlock:hover{
@@ -9,6 +10,8 @@
 .card-title{
     text-decoration: none;
     color: black;
+    margin-left: 0;
+    margin-right:auto;
 }
 
 .project-blurb{
@@ -21,6 +24,10 @@
 .my-card{
     width: 80%;
     height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     border: solid  #109037 5px;
     background-color:  #a4e7b8; 

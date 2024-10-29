@@ -10,21 +10,12 @@ import { changeCount } from "../../../features/projectCounter";
 import "./MainCard.css"
 
 const MainCardTop = () =>{
-
-    const [projectIndex, setProjectIndex] = useState(0);
-
     const projects = useSelector((state) => state.project.value);
+    const projectCount = useSelector((state) => state.projectCounter.value);
+    const dispatch = useDispatch();
 
-
-    // !!!!!!!!!!!
-    // const projectCount = useSelector((state) => state.projectCounter.value);
-    // console.log(projectCount);
-
-    // const dispatch = useDispatch();
-    // dispatch(changeCount(1));
-
-    const currentProject = (projectIndex) => {
-        switch(projectIndex){
+    const currentProject = (projectCount) => {
+        switch(projectCount){
             case 0:
                 return <SingleProjectBlock project={projects.portfolio}/>;
             case 1:
@@ -37,19 +28,19 @@ const MainCardTop = () =>{
     }
 
     const incrementState = () => {
-        if (projectIndex >= 2){
-            setProjectIndex(projectIndex => 0);
+        if (projectCount >= 2){
+            dispatch(changeCount(0));
             return;
         }
-        setProjectIndex(projectIndex => projectIndex + 1);
+        dispatch(changeCount(projectCount + 1));
     }
 
     const decrementState = () => {
-        if (projectIndex <= 0){
-            setProjectIndex(projectIndex => 2);
+        if (projectCount <= 0){
+            dispatch(changeCount(2));
             return;
         }
-        setProjectIndex(projectIndex => projectIndex - 1);
+        dispatch(changeCount(projectCount - 1));
     }
 
     return(
@@ -71,7 +62,7 @@ const MainCardTop = () =>{
                             >{`<`}</button>
                         </div>
                         <div className="card-container">
-                            {currentProject(projectIndex)}
+                            {currentProject(projectCount)}
                         </div>
                         <div className='project-nav-buttons nav-right'>
                             <button className='btn btn-primary' onClick={() => {

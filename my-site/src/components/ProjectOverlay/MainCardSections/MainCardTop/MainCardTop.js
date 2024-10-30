@@ -1,11 +1,10 @@
 import { useSelector, useDispatch } from "react-redux";
-import { useState } from "react";
 
-import SingleResource from '../../Resources/SingleResource';
-import resumePath from '../../Resume/NolanLeyCustodioResume.pdf';
-import SingleProjectBlock from '../../Projects/Block/SingleProjectBlock';
+import SingleResource from '../../../Resources/SingleResource';
+import resumePath from '../../../Resume/NolanLeyCustodioResume.pdf';
+import SingleProjectBlock from '../../../Projects/Block/SingleProjectBlock';
 
-import { changeCount } from "../../../features/projectCounter";
+import { changeCount } from "../../../../features/projectCounter";
 
 import "./MainCard.css"
 

@@ -1,6 +1,5 @@
-
-
-import MainCardTop from './MainCardSections/MainCardTop';
+import MainCardTop from './MainCardSections/MainCardTop/MainCardTop';
+import MainCardBottom from './MainCardSections/MainCardBottom/MainCardBottom';
 
 import './Overlay.css';
 
@@ -11,11 +10,7 @@ export default function Overlay(){
             <h1>Nolan Ley Custodio</h1>
             <div className='main-card'>
                 <MainCardTop/>
-                <div className='card-bottom'>
-                    <div>test</div>
-                    <div>test</div>
-                    <div>test</div>
-                </div>
+                <MainCardBottom/>
             </div>
         </div>
     )

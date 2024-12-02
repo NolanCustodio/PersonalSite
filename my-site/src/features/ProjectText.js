@@ -1,5 +1,5 @@
-const ProjectsInfo = {
-    portfolio:{
+const ProjectsInfo = [
+    {
         'projectName':`Portfolio`,
         'projectBlurb':`More information about this website here.`,
         'projectGithub':`https://github.com/NolanCustodio/PersonalSite`,
@@ -40,7 +40,7 @@ const ProjectsInfo = {
 
         ]
     },
-    synchat:{
+    {
         'projectName':`Synchat`,
         'projectBlurb':`I am currently working on this.`,
         'projectGithub':`https://github.com/NolanCustodio/Synchat`,
@@ -68,7 +68,7 @@ const ProjectsInfo = {
         ]
 
     },
-    newsbox:{
+    {
         'projectName':`NewsBox`,
         'projectBlurb':`First full stack application.`,
         'projectGithub':`https://github.com/jcs78/News-Box-Application`,
@@ -97,7 +97,7 @@ const ProjectsInfo = {
             `Used a News API to dynamically populate custom homepages for users`
             ]
     }
-}
+]
 
 console.log(typeof(ProjectsInfo))
 

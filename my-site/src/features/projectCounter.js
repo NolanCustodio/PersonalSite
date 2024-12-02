@@ -8,9 +8,10 @@
     reducers:{
         changeCount:(state, action) => {
             state.value = action.payload;
-        }
+        },
     }
  })
 
  export const { changeCount } = projectCounterSlice.actions;
  export default projectCounterSlice.reducer;
+

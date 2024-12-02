@@ -6,12 +6,14 @@ import { Provider } from 'react-redux';
 import App from './components/App';
 import projectReducer from './features/project'
 import projectCounterReducer from './features/projectCounter'
+import projectsInfoReducer from './features/projectInfo';
 
 
 const store = configureStore({
   reducer: {
     project: projectReducer,
-    projectCounter: projectCounterReducer
+    projectCounter: projectCounterReducer,
+    projectsInfo: projectsInfoReducer
   }
 })
 

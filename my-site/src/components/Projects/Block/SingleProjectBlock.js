@@ -7,9 +7,6 @@ import './SingleProjectBlock.css';
 const SingleProjectBlock = (props) => {
     const project = props.project
 
-    function setSingleProjectOverlay(project){
-        
-    }
     
     return(
         <div className="card my-card">

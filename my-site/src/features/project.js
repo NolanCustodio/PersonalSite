@@ -15,5 +15,4 @@ const projectSlice = createSlice({
 });
 
 export const { changeProject } = projectSlice.actions;
-
 export default projectSlice.reducer;

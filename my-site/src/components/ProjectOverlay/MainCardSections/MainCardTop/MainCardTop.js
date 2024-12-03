@@ -4,15 +4,16 @@ import SingleResource from '../../../Resources/SingleResource';
 import resumePath from '../../../Resume/NolanLeyCustodioResume.pdf';
 import SingleProjectBlock from '../../../Projects/Block/SingleProjectBlock';
 
-import { changeCount } from "../../../../features/projectCounter";
-import { incrementProjectIndex, decrementProjectIndex, resetProjectIndex } from "../../../../features/projectInfo";
+// import { changeCount } from "../../../../features/projectCounter";
+import { incrementProjectIndex, decrementProjectIndex, resetProjectIndex } from "../../../../features/projectIndex";
 
 import "./MainCard.css"
 
 const MainCardTop = () =>{
     const projects = useSelector((state) => state.project.value);
-    const projectCount = useSelector((state) => state.projectCounter.value);
-    const projectsInfo = useSelector((state) => state.projectsInfo.value);
+    // const projectCount = useSelector((state) => state.projectCounter.value);
+    const projectCount = 0;
+    // const projectIndex = useSelector((state) => state.projectIndex.value);
 
     const dispatch = useDispatch();
 
@@ -31,24 +32,24 @@ const MainCardTop = () =>{
 
     const decrementState = () => {
         if (projectCount <= 0){
-            dispatch(changeCount(2));
+            // dispatch(changeCount(2));
             dispatch(resetProjectIndex())
             return;
         }
         dispatch(decrementProjectIndex())
-        dispatch(changeCount(projectCount - 1));
+        // dispatch(changeCount(projectCount - 1));
 
     }
 
 
     const incrementState = () => {
         if (projectCount >= 2){
-            dispatch(changeCount(0));
+            // dispatch(changeCount(0));
             dispatch(resetProjectIndex())
             return;
         }
         dispatch(incrementProjectIndex());
-        dispatch(changeCount(projectCount + 1));
+        // dispatch(changeCount(projectCount + 1));
     }
 
     return(

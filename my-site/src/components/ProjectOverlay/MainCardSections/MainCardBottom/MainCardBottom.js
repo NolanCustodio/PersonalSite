@@ -1,13 +1,13 @@
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 
 const MainCardBottom = () => {
-    const projectInfo = useSelector((state) => state.projectsInfo.value);
+    // const projectIndex = useSelector((state) => state.projectIndex.value);
 
     // console.log(projectInfo);
 
     return(
         <div className='card-bottom'>
-            <div>{`${projectInfo.projectName}`}</div>
+            <div>test</div>
             <div>test</div>
             <div>test</div>
         </div>

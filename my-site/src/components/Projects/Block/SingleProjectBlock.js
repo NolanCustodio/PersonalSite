@@ -10,7 +10,7 @@ import './SingleProjectBlock.css';
 const SingleProjectBlock = (props) => {
     const dispatch = useDispatch();
     const projectCarousel = useSelector((state) => state.projectCarousel);
-
+    const currentProject = projectCarousel.items[projectCarousel.index]
 
     const project = props.project;
 
@@ -22,17 +22,19 @@ const SingleProjectBlock = (props) => {
 
                 // to={`${project.projectName}`}
                 onClick={() => {
-                    console.log(projectCarousel.items[projectCarousel.index]);
-                    dispatch(changeState(4));
+                    // console.log(projectCarousel.items[projectCarousel.index]);
+                    // dispatch(changeState(1));
+
+                    //Link to Github or site;
                 }}
             >
                 <div className="row no-gutters">
                     <h1 className="card-title">
                         {/* {project.projectName} */}
-                        {projectCarousel.items[projectCarousel.index].projectName}
+                        {currentProject.projectName}
                     </h1>
                     <div className="col-md project-blurb">
-                        {project.projectBlurb}
+                        {currentProject.projectBlurb}
                     </div>
                 </div>
             </a>

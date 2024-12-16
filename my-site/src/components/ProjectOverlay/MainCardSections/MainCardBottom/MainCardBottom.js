@@ -1,13 +1,13 @@
-// import { useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 const MainCardBottom = () => {
-    // const projectIndex = useSelector((state) => state.projectIndex.value);
-
-    // console.log(projectInfo);
+    const projectCarousel = useSelector((state) => state.projectCarousel);
+    const currentProject = projectCarousel.items[projectCarousel.index];
+    
 
     return(
         <div className='card-bottom'>
-            <div>test</div>
+            <div>{currentProject.projectSubtext}</div>
             <div>test</div>
             <div>test</div>
         </div>

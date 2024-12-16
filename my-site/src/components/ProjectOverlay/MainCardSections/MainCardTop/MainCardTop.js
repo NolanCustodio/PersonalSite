@@ -6,6 +6,7 @@ import SingleProjectBlock from '../../../Projects/Block/SingleProjectBlock';
 
 // import { changeCount } from "../../../../features/projectCounter";
 import { incrementProjectIndex, decrementProjectIndex, resetProjectIndex } from "../../../../features/projectIndex";
+import { changeState } from "../../../../features/projectCarousel";
 
 import "./MainCard.css"
 
@@ -14,6 +15,9 @@ const MainCardTop = () =>{
     // const projectCount = useSelector((state) => state.projectCounter.value);
     const projectCount = 0;
     // const projectIndex = useSelector((state) => state.projectIndex.value);
+    const projectCount0 = useSelector((state) => state.projectCarousel.index);
+
+    console.log(projectCount0);
 
     const dispatch = useDispatch();
 
@@ -31,25 +35,20 @@ const MainCardTop = () =>{
     }
 
     const decrementState = () => {
-        if (projectCount <= 0){
-            // dispatch(changeCount(2));
-            dispatch(resetProjectIndex())
+        if (projectCount0 <= 0){
+            dispatch(changeState(2));
             return;
         }
-        dispatch(decrementProjectIndex())
-        // dispatch(changeCount(projectCount - 1));
-
+        dispatch(changeState(projectCount0 - 1));
     }
 
 
     const incrementState = () => {
-        if (projectCount >= 2){
-            // dispatch(changeCount(0));
-            dispatch(resetProjectIndex())
+        if (projectCount0 >= 2){
+            dispatch(changeState(0));
             return;
         }
-        dispatch(incrementProjectIndex());
-        // dispatch(changeCount(projectCount + 1));
+        dispatch(changeState(projectCount0 + 1));
     }
 
     return(

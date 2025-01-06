@@ -39,6 +39,16 @@ const ProjectsInfo = [
             `AWS did offer a lot of tools, which I did learn, but did not feel like the right fit for this project`,
 
         ]
+
+        /*
+        `projectTechnology`:[
+            `React`:`https://techicons.dev/icons/react`,
+            `Redux`:`https://techicons.dev/icons/redux`,
+            `Nginx`: `https://techicons.dev/icons/nginx`,
+            `Docker`: `https://techicons.dev/icons/docker`,
+            ``:``
+        ]
+        */
     },
     {
         'projectName':`Synchat`,
@@ -66,6 +76,17 @@ const ProjectsInfo = [
                 React or NextJS, but I can see myself using whatever I find best`,
 
         ]
+        /*
+        `projectTechnology`:[
+            `Docker`: `https://techicons.dev/icons/docker`,
+            `Nginx`: `https://techicons.dev/icons/nginx`,
+            `RabbitMQ`: `https://techicons.dev/icons/rabbitmq`,
+            `MySQL`: `https://techicons.dev/icons/mysql`,
+            `SolidJS`: `https://techicons.dev/icons/solidjs`,
+            `Prisma`: `https://icons8.com/icons/set/prisma`,
+            `Vite`: `https://techicons.dev/icons/vitejs`,
+        ]
+        */
 
     },
     {
@@ -96,6 +117,17 @@ const ProjectsInfo = [
             `RabbitMQ facilitated communication between VMs`,
             `Used a News API to dynamically populate custom homepages for users`
             ]
+        /*
+        `projectTechnology`:[
+            `PHP`:`https://techicons.dev/icons/php`,
+            `VirtualBox`:`https://icons8.com/icons/set/virtualbox`,
+            `Linux`:`https://techicons.dev/icons/linux`,
+            `Apache`:`https://techicons.dev/icons/apache`,
+            `MySQL`: `https://techicons.dev/icons/mysql`,
+            `Ubuntu`:`https://techicons.dev/icons/ubuntu`,
+            `RabbitMQ`: `https://techicons.dev/icons/rabbitmq`,
+        ]
+        */
     }
 ]
 

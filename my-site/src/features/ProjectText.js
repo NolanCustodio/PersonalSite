@@ -19,6 +19,9 @@ const ProjectsInfo = [
             AWS and was able to get the project up and running there, but saw that DigitalOcean offered 
             more of what I was looking for. 
         `,
+        'projectDescriptionNew':`
+            Simple and light-weight site that links to projects.
+        `,
         newProjectDescription:
             {
                 Infrastructure: `This site is running on a DigitalOcean Droplet that uses 
@@ -30,25 +33,24 @@ const ProjectsInfo = [
             }
 
         ,
-        'projectTechnology':[
-            `Docker with docker-compose to create a multi-container application`,
-            `React for all of the front-end as well as tools such as redux and routing`,
-            `Nginx handles incoming HTTP requests as a proxy`,
-            `Cloudflare secure the connection and also acts a proxy`,
-            `DigitalOcean as a hosting platform was much more appealing to a project this size`,
-            `AWS did offer a lot of tools, which I did learn, but did not feel like the right fit for this project`,
+        // 'projectTechnology':[
+        //     `Docker with docker-compose to create a multi-container application`,
+        //     `React for all of the front-end as well as tools such as redux and routing`,
+        //     `Nginx handles incoming HTTP requests as a proxy`,
+        //     `Cloudflare secure the connection and also acts a proxy`,
+        //     `DigitalOcean as a hosting platform was much more appealing to a project this size`,
+        //     `AWS did offer a lot of tools, which I did learn, but did not feel like the right fit for this project`,
 
-        ]
+        // ]
 
-        /*
-        `projectTechnology`:[
-            `React`:`https://techicons.dev/icons/react`,
-            `Redux`:`https://techicons.dev/icons/redux`,
-            `Nginx`: `https://techicons.dev/icons/nginx`,
-            `Docker`: `https://techicons.dev/icons/docker`,
-            ``:``
-        ]
-        */
+        
+        'projectTechnology':{
+            'React':`https://techicons.dev/icons/react`,
+            'Redux':`https://techicons.dev/icons/redux`,
+            'Nginx': `https://techicons.dev/icons/nginx`,
+            'Docker': `https://techicons.dev/icons/docker`,
+        }
+        
     },
     {
         'projectName':`Synchat`,
@@ -66,27 +68,30 @@ const ProjectsInfo = [
             considering using NextJS with Typescript for this project and there are probably many 
             more tools and aspects that I cannot see yet which I will have to use.
         `,
-        'projectTechnology':[
-            `Docker will hold each container to be a microservice`,
-            `Nginx will act as a proxy as well as handle AMQP requests`,
-            `RabbitMQ will be how the services communicate and send data to each other`,
-            `I want there to be individual users so a database will be neded for various 
-                aspects and I have chosen MySQL for now`,
-            `Creating single page applications is interesting for me so I will use either 
-                React or NextJS, but I can see myself using whatever I find best`,
+        'projectDescriptionNew':`
+            Large longterm project with a focus on being a chatting and scheduling web app.
+        `,
+        // 'projectTechnology':[
+        //     `Docker will hold each container to be a microservice`,
+        //     `Nginx will act as a proxy as well as handle AMQP requests`,
+        //     `RabbitMQ will be how the services communicate and send data to each other`,
+        //     `I want there to be individual users so a database will be neded for various 
+        //         aspects and I have chosen MySQL for now`,
+        //     `Creating single page applications is interesting for me so I will use either 
+        //         React or NextJS, but I can see myself using whatever I find best`,
 
-        ]
-        /*
-        `projectTechnology`:[
-            `Docker`: `https://techicons.dev/icons/docker`,
-            `Nginx`: `https://techicons.dev/icons/nginx`,
-            `RabbitMQ`: `https://techicons.dev/icons/rabbitmq`,
-            `MySQL`: `https://techicons.dev/icons/mysql`,
-            `SolidJS`: `https://techicons.dev/icons/solidjs`,
-            `Prisma`: `https://icons8.com/icons/set/prisma`,
-            `Vite`: `https://techicons.dev/icons/vitejs`,
-        ]
-        */
+        // ]
+        
+        'projectTechnology':{
+            'Docker': `https://techicons.dev/icons/docker`,
+            'Nginx': `https://techicons.dev/icons/nginx`,
+            'RabbitMQ': `https://techicons.dev/icons/rabbitmq`,
+            'MySQL': `https://techicons.dev/icons/mysql`,
+            'SolidJS': `https://techicons.dev/icons/solidjs`,
+            'Prisma': `https://icons8.com/icons/set/prisma`,
+            'Vite': `https://techicons.dev/icons/vitejs`,
+        }
+        
 
     },
     {
@@ -105,29 +110,32 @@ const ProjectsInfo = [
             I did not like. In spite of that, the application worked, and it showed me that 
             creating an application was what I wanted to do.
         `,
-        'projectTechnology':[
-            `Virtualbox was used to create virtual machines for each microservice`,
-            `The VMs all used Ubuntu and LAMP was the tech stack that we used`,
-            `Linux tools such as systemd, cronjobs, systemctl, iptables, and more were used to 
-                secure, facilitate, and automate`,
-            `We had an ssl certificate for Apache`,
-            `MySQL database formation and data backup was scripted using BASH`,
-            `Created an MVC from scratch for this project to handle navigation and page data`,
-            `PHP was used throughout the project as the main language`,
-            `RabbitMQ facilitated communication between VMs`,
-            `Used a News API to dynamically populate custom homepages for users`
-            ]
-        /*
-        `projectTechnology`:[
-            `PHP`:`https://techicons.dev/icons/php`,
-            `VirtualBox`:`https://icons8.com/icons/set/virtualbox`,
-            `Linux`:`https://techicons.dev/icons/linux`,
-            `Apache`:`https://techicons.dev/icons/apache`,
-            `MySQL`: `https://techicons.dev/icons/mysql`,
-            `Ubuntu`:`https://techicons.dev/icons/ubuntu`,
-            `RabbitMQ`: `https://techicons.dev/icons/rabbitmq`,
-        ]
-        */
+        'projectDescriptionNew':`
+            Group project for a skeleton of a News web app.
+        `,
+        // 'projectTechnology':[
+        //     `Virtualbox was used to create virtual machines for each microservice`,
+        //     `The VMs all used Ubuntu and LAMP was the tech stack that we used`,
+        //     `Linux tools such as systemd, cronjobs, systemctl, iptables, and more were used to 
+        //         secure, facilitate, and automate`,
+        //     `We had an ssl certificate for Apache`,
+        //     `MySQL database formation and data backup was scripted using BASH`,
+        //     `Created an MVC from scratch for this project to handle navigation and page data`,
+        //     `PHP was used throughout the project as the main language`,
+        //     `RabbitMQ facilitated communication between VMs`,
+        //     `Used a News API to dynamically populate custom homepages for users`
+        //     ]
+        
+        'projectTechnology':{
+            'PHP':`https://techicons.dev/icons/php`,
+            'VirtualBox':`https://icons8.com/icons/set/virtualbox`,
+            'Linux':`https://techicons.dev/icons/linux`,
+            'Apache':`https://techicons.dev/icons/apache`,
+            'MySQL': `https://techicons.dev/icons/mysql`,
+            'Ubuntu':`https://techicons.dev/icons/ubuntu`,
+            'RabbitMQ': `https://techicons.dev/icons/rabbitmq`,
+        }
+        
     }
 ]
 

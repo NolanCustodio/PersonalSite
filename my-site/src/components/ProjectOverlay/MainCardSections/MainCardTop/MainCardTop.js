@@ -4,17 +4,15 @@ import SingleResource from '../../../Resources/SingleResource';
 import resumePath from '../../../Resume/NolanLeyCustodioResume.pdf';
 import SingleProjectBlock from '../../../Projects/Block/SingleProjectBlock';
 
-// import { changeCount } from "../../../../features/projectCounter";
-import { incrementProjectIndex, decrementProjectIndex, resetProjectIndex } from "../../../../features/projectIndex";
 import { changeState } from "../../../../features/projectCarousel";
 
 import "./MainCard.css"
 
 const MainCardTop = () =>{
     const projects = useSelector((state) => state.project.value);
-    // const projectCount = useSelector((state) => state.projectCounter.value);
+
     const projectCount = 0;
-    // const projectIndex = useSelector((state) => state.projectIndex.value);
+
     const projectCount0 = useSelector((state) => state.projectCarousel.index);
 
     console.log(projectCount0);

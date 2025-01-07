@@ -27,9 +27,7 @@ const NavBar = () => {
                     </div>
                     
                 </li>
-                <li className="nav-item active">
-                    <a className="nav-link nav-item-link" href='/Overlay'>Overlay</a>    
-                </li>
+
                 <li className="form-inline my-email">
                     custodionolan@gmail.com
                 </li>

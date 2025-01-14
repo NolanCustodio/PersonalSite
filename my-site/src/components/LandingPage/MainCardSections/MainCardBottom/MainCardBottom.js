@@ -1,14 +1,6 @@
 import { useSelector } from "react-redux";
+import IconDisplay from "./IconDisplay";
 
-const TechnologyIcons = (projectTechnology) => {
-        return(
-            <div>
-                {projectTechnology.map(tech => (
-                    <div>{tech}</div>
-                ))}
-            </div>
-        )
-};
 
 
 const MainCardBottom = () => {
@@ -20,7 +12,7 @@ const MainCardBottom = () => {
             <div>{currentProject.projectSubtext}</div>
             <div>{currentProject.projectDescriptionNew}</div>
             <div>
-                
+                <IconDisplay/>
             </div>
         </div>
     )

@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const projectIndex = {
     index: 0,
+    project:{},
 }
 
 const projectIndexSlice = createSlice({
@@ -19,7 +20,7 @@ const projectIndexSlice = createSlice({
         resetProjectIndex:(state) =>{
             state.value = 0;
 
-        }
+        },
     }
 });
 

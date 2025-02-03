@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import IconDisplay from "./IconDisplay";
 
-
+import "./MainCardBottom.css"
 
 const MainCardBottom = () => {
     const projectCarousel = useSelector((state) => state.projectCarousel);
@@ -9,9 +9,13 @@ const MainCardBottom = () => {
 
     return(
         <div className='card-bottom'>
-            <div>{currentProject.projectSubtext}</div>
-            <div>{currentProject.projectDescriptionNew}</div>
-            <div>
+            <div className="test">
+                {currentProject.projectSubtext}
+            </div>
+            <div className="test">
+                {currentProject.projectDescriptionNew}
+            </div>
+            <div className="test">
                 <IconDisplay/>
             </div>
         </div>

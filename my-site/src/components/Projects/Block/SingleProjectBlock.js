@@ -19,14 +19,6 @@ const SingleProjectBlock = (props) => {
         <div className="card my-card">
             <a
                 className="singleProjectBlock stretched-link"
-
-                // to={`${project.projectName}`}
-                onClick={() => {
-                    // console.log(projectCarousel.items[projectCarousel.index]);
-                    // dispatch(changeState(1));
-
-                    //Link to Github or site;
-                }}
             >
                 <div className="row no-gutters">
                     <h1 className="card-title">

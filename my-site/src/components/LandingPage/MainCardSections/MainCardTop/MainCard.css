@@ -8,14 +8,6 @@
     max-height: 50%;
 }
 
-.card-bottom{
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-
 .landing-left{
     width: 50%;
     max-height: 100%;
@@ -31,12 +23,6 @@
     width: 50%;
     max-height: 100%;
 }
-
-/* .test{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 .scrolling-project-container{
     width: 100%;
@@ -68,7 +54,4 @@
     align-items: center;
     width: 100%;
     height: 100%;
-}
-
-.my-card{
 }

@@ -1,0 +1,27 @@
+/* Main Card Bottom */
+.card-bottom{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 3%;
+
+}
+
+.test{
+    border: solid black 1px;
+    width: 33%;
+}
+
+
+/* -------------------------------- */
+
+/* Icon Display */
+.single-icon{
+    width: 100px;
+    height: 100px;
+}
+
+.all-tech-icons{
+    display: flex;
+    justify-content: space-evenly;
+}

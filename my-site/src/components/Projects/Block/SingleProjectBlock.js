@@ -22,7 +22,6 @@ const SingleProjectBlock = (props) => {
             >
                 <div className="row no-gutters">
                     <h1 className="card-title">
-                        {/* {project.projectName} */}
                         {currentProject.projectName}
                     </h1>
                     <div className="col-md project-blurb">

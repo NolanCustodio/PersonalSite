@@ -2,32 +2,31 @@
 .card-top{
     display: flex;
     text-align: center;
-    /* justify-content: space-between; */
     padding-top: 3%;
     padding-bottom: 3%;
-    max-height: 50%;
+    height: 50%;
 }
 
 .landing-left{
     width: 50%;
-    max-height: 100%;
     border-right: solid black 1px;
+
 }
 
 .landing-external-links{
     display: flex;
     text-align: center;
+    height: 100%;
 }
 
 .landing-right{
     width: 50%;
-    max-height: 100%;
 }
 
 .scrolling-project-container{
     width: 100%;
     padding: 5%;
-    height: 85%;
+    height: 80%;
     /* overflow-y: auto; */
 
     display: flex;
@@ -54,4 +53,26 @@
     align-items: center;
     width: 100%;
     height: 100%;
+}
+
+.resource-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.my-card-landing{
+    margin: 5%;
+    padding: 5%;
+    
+    width: 50%;
+
+    border: solid  #109037 5px;
+    background-color:  #a4e7b8; 
+
+    transition: transform 0.3s ease 0s;
+}
+
+.my-card-landing:hover{
+    transform: translateY(-10px);
 }

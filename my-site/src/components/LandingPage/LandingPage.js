@@ -7,7 +7,6 @@ export default function Overlay(){
 
     return(
         <div>
-            <h1>Nolan Ley Custodio</h1>
             <div className='main-card'>
                 <MainCardTop/>
                 <MainCardBottom/>

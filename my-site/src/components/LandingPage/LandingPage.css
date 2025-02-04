@@ -1,28 +1,5 @@
 
 .main-card{
-    height: 80vh;
-}
-
-.resource-link{
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-}
-
-.my-card-landing{
-    margin: 5%;
-    padding: 5%;
-    
-    width: 50%;
-    min-width: 200px;
-
-    border: solid  #109037 5px;
-    background-color:  #a4e7b8; 
-
-    transition: transform 0.3s ease 0s;
-}
-
-.my-card-landing:hover{
-    transform: translateY(-10px);
+    height: 70%;
 }
 

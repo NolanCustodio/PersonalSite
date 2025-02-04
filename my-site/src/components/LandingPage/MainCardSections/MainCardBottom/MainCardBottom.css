@@ -3,13 +3,25 @@
     display: flex;
     text-align: center;
     justify-content: space-between;
+    /* padding-left: 3%;
+    padding-right: 3%; */
     padding: 3%;
-
+    height: 50%;
 }
 
 .test{
     border: solid black 1px;
-    width: 33%;
+    width: 47%;
+    
+}
+
+.words{
+    height: 100%;
+    display: flex;
+    /* flex: auto; */
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 

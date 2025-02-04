@@ -7,7 +7,7 @@ import SingleProjectBlock from '../../../Projects/Block/SingleProjectBlock';
 // import { incrementProjectIndex, decrementProjectIndex, resetProjectIndex } from "../../../../features/projectIndex";
 import { changeState } from "../../../../features/projectCarousel";
 
-import "./MainCard.css"
+import "./MainCardTop.css"
 
 const MainCardTop = () =>{
     const projects = useSelector((state) => state.project.value);
@@ -57,8 +57,6 @@ const MainCardTop = () =>{
                 </div>
             </div>
             <div className='landing-right'>
-                <h2>Projects</h2>
-
                     <div className='scrolling-project-container'>
                         <div className='project-nav-buttons nav-left'>
                             <button className='btn btn-primary' onClick={() =>{

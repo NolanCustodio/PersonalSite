@@ -9,12 +9,15 @@ const MainCardBottom = () => {
 
     return(
         <div className='card-bottom'>
-            <div className="test">
-                {currentProject.projectSubtext}
+            <div className="test words">
+                {/* {currentProject.projectSubtext} */}
+                <h1>Nolan Ley Custodio</h1>
+                <h2>custodionolan@gmail.com</h2>
+                <h2>Full Stack Developer</h2>
             </div>
-            <div className="test">
+            {/* <div className="test">
                 {currentProject.projectDescriptionNew}
-            </div>
+            </div> */}
             <div className="test">
                 <IconDisplay/>
             </div>

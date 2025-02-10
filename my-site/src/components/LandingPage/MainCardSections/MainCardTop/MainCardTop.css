@@ -2,9 +2,9 @@
 .card-top{
     display: flex;
     text-align: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
     height: 50%;
+    padding-top: 3%;
+    padding-bottom: 5%;
 }
 
 .landing-left{
@@ -26,7 +26,7 @@
 .scrolling-project-container{
     width: 100%;
     padding: 5%;
-    height: 80%;
+    height: 100%;
     /* overflow-y: auto; */
 
     display: flex;
@@ -64,6 +64,10 @@
 .my-card-landing{
     margin: 5%;
     padding: 5%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     width: 50%;
 

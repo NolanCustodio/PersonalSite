@@ -2,7 +2,7 @@ version: '3.7'
 name: personal-site
 services:
   nginx:
-    container_name: nginx
+    container_name: portfolio-nginx
     depends_on:
       - client
     restart: always
@@ -10,7 +10,7 @@ services:
     ports:
       - '80:80'
   client:
-    container_name: client
+    container_name: portfolio-client
     image: nolancustodio/personal-site-client:latest
     volumes:
       - ./my-site/src:/app/src

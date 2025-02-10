@@ -8,11 +8,11 @@ import './SingleProjectBlock.css';
 
 
 const SingleProjectBlock = (props) => {
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
     const projectCarousel = useSelector((state) => state.projectCarousel);
     const currentProject = projectCarousel.items[projectCarousel.index]
 
-    const project = props.project;
+    // const project = props.project;
 
     
     return(

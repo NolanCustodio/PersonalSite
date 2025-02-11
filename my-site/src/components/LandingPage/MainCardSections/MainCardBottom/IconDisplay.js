@@ -47,9 +47,9 @@ const SingleTechIcon = ({ name }) => {
 const IconDisplay = () => {
     const projectCarousel = useSelector((state) => state.projectCarousel);
     const currentProject = projectCarousel.items[projectCarousel.index];
-
-
     const techList = Object.keys(currentProject.projectTechnology);
+
+    let techIconCount = 0;
 
     return (
         <div className='all-tech-icons'>

@@ -14,8 +14,6 @@ const MainCardTop = () =>{
     const projectCount = 0;
     const projectCount0 = useSelector((state) => state.projectCarousel.index);
 
-    console.log(projectCount0);
-
     const dispatch = useDispatch();
 
     const currentProject = (projectCount) => {

@@ -1,19 +1,18 @@
-import { useSelector } from "react-redux";
 import IconDisplay from "./IconDisplay";
 
 import "./MainCardBottom.css"
 
 const MainCardBottom = () => {
-    const projectCarousel = useSelector((state) => state.projectCarousel);
-    const currentProject = projectCarousel.items[projectCarousel.index];
-
     return(
         <div className='card-bottom'>
             <div className="bottom bottom-left">
 
-                <h1>Nolan Ley Custodio</h1>
-                <h2>custodionolan@gmail.com</h2>
-                <h2>Full Stack Developer</h2>
+                <h1 className="static-text">Nolan Ley Custodio</h1>
+                <div>
+                    <h2 className="static-text">custodionolan</h2>
+                    <h2 className="static-text">@gmail.com</h2>
+                </div>
+                <h2 className="static-text">Full Stack Developer</h2>
             </div>
 
             <div className="bottom">

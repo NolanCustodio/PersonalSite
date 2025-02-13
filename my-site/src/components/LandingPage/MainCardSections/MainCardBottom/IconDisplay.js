@@ -39,7 +39,7 @@ const SingleTechIcon = ({ name }) => {
     const Component = techIcons[name];
 
     return (
-        <Component />
+        <Component className="single-icon"/>
     )
 }
 
@@ -54,9 +54,9 @@ const IconDisplay = () => {
     return (
         <div className='all-tech-icons'>
             {techList.map((name) => (
-                <div key={name} className="single-icon" >
-                    <SingleTechIcon name={name}/>
-                </div>
+                
+                    <SingleTechIcon name={name} key={name}/>
+                
             ))}
         </div>
     )

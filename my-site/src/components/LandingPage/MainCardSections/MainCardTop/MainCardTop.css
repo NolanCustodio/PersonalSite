@@ -7,25 +7,93 @@
     padding-bottom: 5%;
 }
 
+/* ----------------------------top left quadrant------------------------------- */
+
 .landing-left{
-    width: 50%;
-    border-right: solid black 1px;
-
-}
-
-.landing-external-links{
     display: flex;
     text-align: center;
     height: 100%;
+    width: 50%;
+    border-right: solid black 1px;
 }
+
+.my-card-landing{
+    margin: 5%;
+    padding: 5%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 50%;
+
+    border: solid  #109037 5px;
+    background-color:  #a4e7b8; 
+
+    transition: transform 0.3s ease 0s;
+}
+
+.my-card-landing:hover{
+    transform: translateY(-10px);
+}
+
+.resource-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+/* mobile and tablet responsive sizes */
+
+@media only screen and (max-width: 1250px){
+    .landing-left{
+        display: block;
+    }
+
+    .landing-external-links{
+        display: block;
+        text-align: center;
+    }
+
+    .my-card-landing{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 43%;
+        vertical-align: middle;
+    }
+
+    .link-title{
+        height: 100%;
+        margin:0;
+        transform: translateY(25%);
+    }
+}
+
+@media only screen and (max-width: 830px){
+    .link-title{
+        transform: translateY(33%);
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .my-card-landing{
+        width: 80%;
+    }
+}
+
+
+/* top right quadrant */
 
 .landing-right{
     width: 50%;
 }
 
 .scrolling-project-container{
-    width: 100%;
-    padding: 5%;
+    /* width: 100%; */
+    padding-left: 5%;
+    padding-right: 5%;
     height: 100%;
     /* overflow-y: auto; */
 
@@ -53,30 +121,4 @@
     align-items: center;
     width: 100%;
     height: 100%;
-}
-
-.resource-link{
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-}
-
-.my-card-landing{
-    margin: 5%;
-    padding: 5%;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    width: 50%;
-
-    border: solid  #109037 5px;
-    background-color:  #a4e7b8; 
-
-    transition: transform 0.3s ease 0s;
-}
-
-.my-card-landing:hover{
-    transform: translateY(-10px);
 }

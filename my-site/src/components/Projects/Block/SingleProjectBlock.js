@@ -20,7 +20,7 @@ const SingleProjectBlock = (props) => {
             <a
                 className="singleProjectBlock stretched-link"
             >
-                <div className="row no-gutters">
+                <div className="row ">
                     <h1 className="card-title">
                         {currentProject.projectName}
                     </h1>

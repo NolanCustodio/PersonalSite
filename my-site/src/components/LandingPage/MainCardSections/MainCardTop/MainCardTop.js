@@ -9,7 +9,7 @@ import { changeState } from "../../../../features/projectCarousel";
 
 import "./MainCardTop.css"
 
-const MainCardTop = () =>{
+const MainCardTop = () => {
     const projects = useSelector((state) => state.project.value);
     const projectCount = 0;
     const projectCount0 = useSelector((state) => state.projectCarousel.index);
@@ -17,20 +17,20 @@ const MainCardTop = () =>{
     const dispatch = useDispatch();
 
     const currentProject = (projectCount) => {
-        switch(projectCount){
+        switch (projectCount) {
             case 0:
-                return <SingleProjectBlock project={projects.portfolio}/>;
+                return <SingleProjectBlock project={projects.portfolio} />;
             case 1:
-                return <SingleProjectBlock project={projects.newsbox}/>;
+                return <SingleProjectBlock project={projects.newsbox} />;
             case 2:
-                return <SingleProjectBlock project={projects.synchat}/>;
+                return <SingleProjectBlock project={projects.synchat} />;
             default:
                 return null;
-        }   
+        }
     }
 
     const decrementState = () => {
-        if (projectCount0 <= 0){
+        if (projectCount0 <= 0) {
             dispatch(changeState(2));
             return;
         }
@@ -39,38 +39,36 @@ const MainCardTop = () =>{
 
 
     const incrementState = () => {
-        if (projectCount0 >= 2){
+        if (projectCount0 >= 2) {
             dispatch(changeState(0));
             return;
         }
         dispatch(changeState(projectCount0 + 1));
     }
 
-    return(
+    return (
         <div className='card-top'>
             <div className='landing-left'>
-                <div className='landing-external-links'>
-                    <SingleResource link="https://github.com/NolanCustodio" name="Github"/>
-                    <SingleResource link={resumePath} name="Resume"/>
-                </div>
+                <SingleResource link="https://github.com/NolanCustodio" name="Github" />
+                <SingleResource link={resumePath} name="Resume" />
             </div>
             <div className='landing-right'>
-                    <div className='scrolling-project-container'>
-                        <div className='project-nav-buttons nav-left'>
-                            <button className='btn btn-primary' onClick={() =>{
-                                decrementState();
-                            }}
-                            >{`<`}</button>
-                        </div>
-                        <div className="card-container">
-                            {currentProject(projectCount)}
-                        </div>
-                        <div className='project-nav-buttons nav-right'>
-                            <button className='btn btn-primary' onClick={() => {
-                                incrementState();
-                            }}>{`>`}</button>
-                        </div>
+                <div className='scrolling-project-container'>
+                    <div className='project-nav-buttons nav-left'>
+                        <button className='btn btn-primary' onClick={() => {
+                            decrementState();
+                        }}
+                        >{`<`}</button>
                     </div>
+                    <div className="card-container">
+                        {currentProject(projectCount)}
+                    </div>
+                    <div className='project-nav-buttons nav-right'>
+                        <button className='btn btn-primary' onClick={() => {
+                            incrementState();
+                        }}>{`>`}</button>
+                    </div>
+                </div>
 
             </div>
         </div>

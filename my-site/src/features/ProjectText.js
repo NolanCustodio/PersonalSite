@@ -1,7 +1,7 @@
 const ProjectsInfo = [
     {
         'projectName':`Portfolio`,
-        'projectBlurb':`More information about this website here.`,
+        'projectBlurb':`You are here!`,
         'projectGithub':`https://github.com/NolanCustodio/PersonalSite`,
         'projectSubtext':`You are here!`,
         'projectDescriptionNew':`
@@ -17,7 +17,7 @@ const ProjectsInfo = [
     },
     {
         'projectName':`Synchat`,
-        'projectBlurb':`I am currently working on this.`,
+        'projectBlurb':`Currently working on this.`,
         'projectGithub':`https://github.com/NolanCustodio/Synchat`,
         'projectSubtext':`For the Long Road`,
         'projectDescriptionNew':`
@@ -37,7 +37,7 @@ const ProjectsInfo = [
     },
     {
         'projectName':`NewsBox`,
-        'projectBlurb':`First full stack application.`,
+        'projectBlurb':`First Full Stack Application.`,
         'projectGithub':`https://github.com/jcs78/News-Box-Application`,
         'projectSubtext':`The Spark`,
         'projectDescriptionNew':`

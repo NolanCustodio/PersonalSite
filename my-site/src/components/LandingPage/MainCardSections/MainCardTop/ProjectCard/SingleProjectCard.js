@@ -1,26 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
 
-import { changeState } from "../../../features/projectCarousel";
+import { useSelector} from "react-redux";
 
-import './SingleProjectBlock.css';
+import './SingleProjectCard.css';
 
 
-const SingleProjectBlock = (props) => {
-    // const dispatch = useDispatch();
+const SingleProjectCard = (props) => {
     const projectCarousel = useSelector((state) => state.projectCarousel);
     const currentProject = projectCarousel.items[projectCarousel.index]
-
-    // const project = props.project;
-
-    
     return(
         <div className="card my-card">
             <a
                 className="singleProjectBlock stretched-link"
             >
-                <div className="row ">
+                <div className="carrousel-text">
                     <h1 className="card-title">
                         {currentProject.projectName}
                     </h1>
@@ -33,4 +26,4 @@ const SingleProjectBlock = (props) => {
     )
 }
 
-export default SingleProjectBlock;
+export default SingleProjectCard;

@@ -19,8 +19,7 @@
 
 .my-card-landing{
     margin: 5%;
-    padding: 5%;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,14 +64,14 @@
 
     .link-title{
         height: 100%;
-        margin:0;
-        transform: translateY(25%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 @media only screen and (max-width: 830px){
     .link-title{
-        transform: translateY(33%);
         font-size: 30px;
     }
 }
@@ -81,44 +80,4 @@
     .my-card-landing{
         width: 80%;
     }
-}
-
-
-/* top right quadrant */
-
-.landing-right{
-    width: 50%;
-}
-
-.scrolling-project-container{
-    /* width: 100%; */
-    padding-left: 5%;
-    padding-right: 5%;
-    height: 100%;
-    /* overflow-y: auto; */
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-nav-buttons{
-    display: flex;
-    align-items: center;
-}
-
-.nav-right{
-    margin-left: auto;
-}
-
-.nav-left{
-    margin-right: auto;
-}
-
-.card-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
 }

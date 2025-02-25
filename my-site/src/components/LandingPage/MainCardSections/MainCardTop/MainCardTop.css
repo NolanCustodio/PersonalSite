@@ -71,13 +71,20 @@
 }
 
 @media only screen and (max-width: 830px){
-    .link-title{
-        font-size: 30px;
+    .my-card-landing{
+        width: 80%;
     }
 }
 
 @media only screen and (max-width: 650px){
     .my-card-landing{
-        width: 80%;
+       margin-top: 15%;
+       margin-bottom: 15%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .link-title{
+        font-size: 200%;
     }
 }

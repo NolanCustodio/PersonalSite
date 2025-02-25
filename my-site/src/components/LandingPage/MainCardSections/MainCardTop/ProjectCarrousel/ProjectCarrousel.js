@@ -7,20 +7,22 @@ import { changeState } from "../../../../../features/projectCarousel";
 
 const MobileProjectCarrousel = ({ decrementState, incrementState }) => {
     return (
-        <div className='scrolling-project-container'>
-            <div className="card-container">
+        <div className="mobile-container">
+            <div className='scrolling-project-container'>
                 <SingleProjectCard />
             </div>
-            <div className='project-nav-buttons nav-left'>
-                <button className='btn btn-primary' onClick={() => {
-                    decrementState();
-                }}
-                >{`<`}</button>
-            </div>
-            <div className='project-nav-buttons nav-right'>
-                <button className='btn btn-primary' onClick={() => {
-                    incrementState();
-                }}>{`>`}</button>
+            <div className="mobile-buttons">
+                <div className='project-nav-buttons nav-left'>
+                    <button className='btn btn-primary' onClick={() => {
+                        decrementState();
+                    }}
+                    >{`<`}</button>
+                </div>
+                <div className='project-nav-buttons nav-right'>
+                    <button className='btn btn-primary' onClick={() => {
+                        incrementState();
+                    }}>{`>`}</button>
+                </div>
             </div>
         </div>
     )
@@ -35,9 +37,9 @@ const DesktopProjectCarrousel = ({ decrementState, incrementState }) => {
                 }}
                 >{`<`}</button>
             </div>
-            <div className="card-container">
+            
                 <SingleProjectCard />
-            </div>
+ 
             <div className='project-nav-buttons nav-right'>
                 <button className='btn btn-primary' onClick={() => {
                     incrementState();
@@ -69,7 +71,7 @@ const ProjectCarrousel = () => {
     }
 
     //this only changes on load, need to add function to implement dynamic changing
-    if (screenWidth <= 800) {
+    if (screenWidth <= 1100) {
         return (
             <div className='landing-right'>
                 <MobileProjectCarrousel

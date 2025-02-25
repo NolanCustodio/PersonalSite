@@ -25,6 +25,26 @@
     /* font-size: 4em; */
 }
 
+
+@media only screen and (max-width: 1200px){
+    .static-text{
+        font-size: 300%;
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+    .static-text{
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .static-text{
+        font-size: 140%;
+    }
+}
+
 /* -------------Icon Display-------------- */
 .single-icon{
     justify-content: center;

@@ -14,10 +14,7 @@ const MainCardBottom = () => {
                 </div>
                 <h2 className="static-text">Full Stack Developer</h2>
             </div>
-
-            <div className="bottom">
-                <IconDisplay/>
-            </div>
+            <IconDisplay/>
         </div>
     )
 }

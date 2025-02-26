@@ -1,4 +1,4 @@
-import { React } from 'react';
+import { React, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 import { ReactComponent as Apache } from '../../../../images/icons/Apache.svg'
@@ -35,28 +35,44 @@ const techIcons = {
     Vite: Vite,
 }
 
-const SingleTechIcon = ({ name }) => {
+// function setTechIconClass(techIconCount) {
+//     const prefix = "single-icon";
+
+//     if (techIconCount = 4) {
+//         return prefix + " icon-count-4"
+//     } else {
+//         return prefix + " icon-count-7"
+//     }
+// }
+
+const SingleTechIcon = ({ name, techIconCountArg }) => {
+    // const [techIconCount, setTechIconCount] = useState(tech);
+
+    console.log(techIconCountArg);
+
     const Component = techIcons[name];
 
     return (
-        <Component className="single-icon"/>
+        // <Component className={setTechIconClass(techIconCountArg)} />
+        <Component className="single-icon" />
     )
 }
 
 
 const IconDisplay = () => {
+    
     const projectCarousel = useSelector((state) => state.projectCarousel);
     const currentProject = projectCarousel.items[projectCarousel.index];
     const techList = Object.keys(currentProject.projectTechnology);
 
-    let techIconCount = 0;
+    // setTechIconCount(techList.length);
 
     return (
-        <div className='all-tech-icons'>
+        <div className='bottom all-tech-icons'>
             {techList.map((name) => (
-                
-                    <SingleTechIcon name={name} key={name}/>
-                
+
+                <SingleTechIcon name={name} key={name} techIconCountArg={techList.length} />
+
             ))}
         </div>
     )

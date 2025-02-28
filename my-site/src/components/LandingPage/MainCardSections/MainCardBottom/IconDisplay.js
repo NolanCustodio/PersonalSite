@@ -5,7 +5,7 @@ import { ReactComponent as Apache } from '../../../../images/icons/Apache.svg'
 import { ReactComponent as Docker } from '../../../../images/icons/Docker.svg';
 import { ReactComponent as Linux } from '../../../../images/icons/Linux.svg'
 import { ReactComponent as MySQL } from '../../../../images/icons/MySQL.svg';
-import { ReactComponent as Nginx } from '../../../../images/icons/Nginx.svg'
+import { ReactComponent as Nginx } from '../../../../images/icons/NGINX.svg'
 import { ReactComponent as PHP } from '../../../../images/icons/PHP.svg'
 import { ReactComponent as Prisma } from '../../../../images/icons/Prisma.svg'
 import { ReactComponent as RabbitMQ } from '../../../../images/icons/RabbitMQ.svg'

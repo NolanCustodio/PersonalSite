@@ -46,7 +46,8 @@
 
 @media only screen and (max-width: 1250px){
     .landing-left{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     .landing-external-links{
@@ -55,11 +56,8 @@
     }
 
     .my-card-landing{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
         height: 43%;
-        vertical-align: middle;
     }
 
     .link-title{
@@ -78,8 +76,8 @@
 
 @media only screen and (max-width: 650px){
     .my-card-landing{
-       margin-top: 15%;
-       margin-bottom: 15%;
+       /* margin-top: 15%;
+       margin-bottom: 15%; */
     }
 }
 

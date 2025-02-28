@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from 'react';
+import { React } from 'react';
 import { useSelector } from 'react-redux';
 
 import { ReactComponent as Apache } from '../../../../images/icons/Apache.svg'
@@ -35,15 +35,6 @@ const techIcons = {
     Vite: Vite,
 }
 
-// function setTechIconClass(techIconCount) {
-//     const prefix = "single-icon";
-
-//     if (techIconCount = 4) {
-//         return prefix + " icon-count-4"
-//     } else {
-//         return prefix + " icon-count-7"
-//     }
-// }
 
 const SingleTechIcon = ({ name, techIconCountArg }) => {
     // const [techIconCount, setTechIconCount] = useState(tech);

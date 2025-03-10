@@ -55,7 +55,4 @@ const ProjectsInfo = [
         
     }
 ]
-
-console.log(typeof(ProjectsInfo))
-
 export default ProjectsInfo;

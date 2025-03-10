@@ -37,14 +37,9 @@ const techIcons = {
 
 
 const SingleTechIcon = ({ name, techIconCountArg }) => {
-    // const [techIconCount, setTechIconCount] = useState(tech);
-
-    console.log(techIconCountArg);
-
     const Component = techIcons[name];
 
     return (
-        // <Component className={setTechIconClass(techIconCountArg)} />
         <Component className="single-icon" />
     )
 }

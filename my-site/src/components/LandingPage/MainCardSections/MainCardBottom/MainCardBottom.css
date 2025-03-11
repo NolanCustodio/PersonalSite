@@ -12,12 +12,6 @@
     width: 49%;
 }
 
-.bottom-left{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 /* -------------static text--------------- */
 
 .static-text{

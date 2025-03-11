@@ -17,6 +17,12 @@
     border-right: solid black 1px;
 }
 
+.top-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .my-card-landing{
     margin: 5%;
 

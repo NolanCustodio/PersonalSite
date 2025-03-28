@@ -1,9 +1,12 @@
+import PersonalInfo from "./PersonalInfo/PersonalInfo";
+import Project from "./Project/Project";
 
 const Landing = () =>{
 
     return(
         <div>
-            Test
+            <PersonalInfo/>
+            <Project/>
         </div>
     )
 }

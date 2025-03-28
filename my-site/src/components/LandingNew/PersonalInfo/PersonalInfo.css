@@ -1,0 +1,9 @@
+.PersonalInfo{
+    text-align: center;
+}
+.logo{
+    width: 100%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    border: black 1px solid;
+}

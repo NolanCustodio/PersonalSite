@@ -1,0 +1,30 @@
+.PersonalInfo{
+    text-align: center;
+    /* display: block;   */
+    justify-content: center;  
+    align-items: center;  
+
+}
+.logo{
+    display: inline-block;
+    width: 100%;
+
+    height: 300px;
+    width: 300px;
+
+    margin-top: 20%;
+    margin-bottom: 20%;
+    
+    border-radius: 50%;
+    border: black 1px solid;
+}
+
+.project-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.to-project1{
+    margin-top: 300px;
+    margin-bottom: 300px;
+}

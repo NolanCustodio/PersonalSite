@@ -1,7 +1,7 @@
 import './Project.css';
 
 const Project = (props) =>{
-    console.log(props);
+    // console.log(props);
 
     return(
         <div className='project' id={props.projectName}>

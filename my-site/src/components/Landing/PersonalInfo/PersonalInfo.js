@@ -1,9 +1,8 @@
 import './PersonalInfo.css';
 
-import ScrollTo from '../../Navigation/ScrollTo';
-
 const PersonalInfo = () => {
 
+    
     return(
         <div className='PersonalInfo'>
             <div className="logo">
@@ -19,7 +18,8 @@ const PersonalInfo = () => {
             </div>
 
             <button className='to-project1 next-button'
-                onClick={ScrollTo}
+                // onClick={useScreenDimensions}
+                // onClick={ScrollTo}
             >
                 V
             </button>

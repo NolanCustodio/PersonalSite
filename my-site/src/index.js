@@ -5,10 +5,12 @@ import { Provider } from 'react-redux';
 
 import App from './components/App';
 import projectCarouselReducer from './features/projectCarousel';
+import windowInfoReducer from './features/windowInfo'
 
 const store = configureStore({
   reducer: {
-    projectCarousel: projectCarouselReducer
+    projectCarousel: projectCarouselReducer,
+    windowInfo: windowInfoReducer,
   }
 })
 

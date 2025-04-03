@@ -16,9 +16,7 @@ function App() {
 
     return (
         <div className='entire-page'>
-            <div className="content">
-                <Landing/>
-            </div>
+            <Landing/>
         </div>
     )
 }

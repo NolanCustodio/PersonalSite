@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getWindowDimensions } from "../components/Navigation";
+// import { getWindowDimensions } from "../components/Navigation";
 
 const windowInfoSlice = createSlice({
     name: "windowInfo",
-    initialState: getWindowDimensions(),
+    initialState: 0,
     reducers:{
         changeState:(state, action) =>{
             state = action.payload

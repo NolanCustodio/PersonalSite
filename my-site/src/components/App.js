@@ -1,7 +1,7 @@
 //Node Modules
-import React from 'react';
+import React, { useEffect } from 'react';
 // import { BrowserRouter, Route, Routes } from 'react-router-dom';
-// import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 
 //Components
@@ -11,7 +11,21 @@ import './App.css';
 // import ScrollToTop from './Navigation/ScrollToTop';
 import Landing from './Landing/Landing';
 
+import { useWindowDimensions } from './Navigation';
+import { changeState } from '../features/windowInfo';
+
 function App() {
+    const x = useSelector((state) => state.windowInfo);
+    const dispatch = useDispatch();
+    
+
+    const windowInfo = useWindowDimensions();
+
+    console.log(windowInfo);
+
+    useEffect(() => {
+        // dispatch(changeState(windowInfo));
+    });
 
 
     return (

@@ -1,5 +1,7 @@
 import './PersonalInfo.css';
 
+import { ScrollTo } from '../../Navigation';
+
 const PersonalInfo = () => {
 
     
@@ -22,7 +24,7 @@ const PersonalInfo = () => {
             <div className='personal-info-bottom-half'>
                 <button className='to-project1 next-button'
                     // onClick={useScreenDimensions}
-                    // onClick={ScrollTo}
+                    onClick={() => ScrollTo}
                 >
                     V
                 </button>

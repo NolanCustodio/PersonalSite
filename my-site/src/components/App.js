@@ -1,5 +1,5 @@
 //Node Modules
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 // import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 
@@ -8,25 +8,14 @@ import { useDispatch, useSelector } from "react-redux";
 import './App.css';
 // import LandingPage from './LandingPage/LandingPage';
 // import NavBar from './NavBar/NavBar';
-// import ScrollToTop from './Navigation/ScrollToTop';
-import Landing from './Landing/Landing';
 
-import { useWindowDimensions } from './Navigation';
+import Landing from './Landing/Landing';
 import { changeState } from '../features/windowInfo';
 
+import { useWindowDimensions } from './Navigation';
+
 function App() {
-    const x = useSelector((state) => state.windowInfo);
-    const dispatch = useDispatch();
-    
-
-    const windowInfo = useWindowDimensions();
-
-    console.log(windowInfo);
-
-    useEffect(() => {
-        // dispatch(changeState(windowInfo));
-    });
-
+    useWindowDimensions();
 
     return (
         <div className='entire-page'>

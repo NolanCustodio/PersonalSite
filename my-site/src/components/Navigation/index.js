@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { changeState } from "../../features/windowInfo";
 
 // import { useLocation } from "react-router-dom";
@@ -15,13 +15,18 @@ import { changeState } from "../../features/windowInfo";
 // }
 
 export function ScrollTo(height){
-    // const anchor = document.querySelector('Synchat')
-    // anchor.scrollIntoView({behavior: 'smooth', block: 'center'})
 
+    const calcHeight = 1.25 * height;
+
+    // const anchor = document.querySelector('Synchat')
+
+    // anchor.scrollIntoView({behavior: 'smooth', block: 'center'})
     // console.log('test');
 
+    // console.log(height);
+
     window.scrollTo({
-        top: {height},
+        top: calcHeight,
         behavior: 'smooth'
     });
 }
@@ -33,22 +38,14 @@ export function getWindowDimensions(){
 
 export function useWindowDimensions(){
     const dispatch = useDispatch();
-    const [ windowDimentions, setWindowDimensions ] = useState(getWindowDimensions());
-
-    // dispatch(changeState(windowDimentions));
-
     useEffect( () => {
         function handleResize() {
-            // setWindowDimensions(getWindowDimensions());
-            dispatch(changeState(window));
+            dispatch(changeState(getWindowDimensions()));
         }
-
         window.addEventListener('resize', handleResize);
         return () => {window.removeEventListener('resize', handleResize)};
-    }, []);
+    });
 
-
-    return windowDimentions;
 }
 
 export default {ScrollTo, getWindowDimensions, useWindowDimensions};

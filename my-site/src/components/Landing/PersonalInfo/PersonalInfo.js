@@ -1,10 +1,12 @@
 import './PersonalInfo.css';
 
 import { ScrollTo } from '../../Navigation';
+import { useSelector } from 'react-redux';
 
 const PersonalInfo = () => {
+    const windowInfo = useSelector((state) => state.windowInfo.index);
 
-    
+
     return(
         <div className='PersonalInfo'>
             <div className='personal-info-top-half'>
@@ -12,7 +14,8 @@ const PersonalInfo = () => {
                     N
                 </div>
                 <h1 >Nolan Ley Custodio</h1>
-                <p >Small Description</p>
+                <p>Small Description</p>
+                <p>{`window size H:${windowInfo.height} W:${windowInfo.width}`}</p>
 
                 <div className='project-list'>
                     <div>Project</div>
@@ -23,8 +26,9 @@ const PersonalInfo = () => {
 
             <div className='personal-info-bottom-half'>
                 <button className='to-project1 next-button'
-                    // onClick={useScreenDimensions}
-                    onClick={() => ScrollTo}
+                    onClick={() => {
+                        ScrollTo(windowInfo.height)}
+                    }
                 >
                     V
                 </button>

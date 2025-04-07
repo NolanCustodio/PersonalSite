@@ -1,4 +1,6 @@
-import './Project.css';
+import IconDisplay from './IconDisplay';
+
+import './project.css';
 
 const Project = (props) =>{
     // console.log(props);
@@ -10,8 +12,11 @@ const Project = (props) =>{
             <h1 className='project-name'>
                 Project Name: {props.projectName}
             </h1>
-            <div>Icons</div>
-            <p>Small Description</p>
+            <div>
+                <IconDisplay technologies={props.projectTechnology}/>
+            </div>
+            <p>{props.projectBlurb}</p>
+            <p>{props.projectSubtext}</p>
             <button className='next-button'>V</button>
         </div>
     )

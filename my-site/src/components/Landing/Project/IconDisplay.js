@@ -1,22 +1,22 @@
 import { React } from 'react';
-import { useSelector } from 'react-redux';
 
-import { ReactComponent as Apache } from '../../../../images/icons/Apache.svg'
-import { ReactComponent as Docker } from '../../../../images/icons/Docker.svg';
-import { ReactComponent as Linux } from '../../../../images/icons/Linux.svg'
-import { ReactComponent as MySQL } from '../../../../images/icons/MySQL.svg';
-import { ReactComponent as Nginx } from '../../../../images/icons/NGINX.svg'
-import { ReactComponent as PHP } from '../../../../images/icons/PHP.svg'
-import { ReactComponent as Prisma } from '../../../../images/icons/Prisma.svg'
-import { ReactComponent as RabbitMQ } from '../../../../images/icons/RabbitMQ.svg'
-import { ReactComponent as ReactSVG } from '../../../../images/icons/React.svg'
-import { ReactComponent as Redux } from '../../../../images/icons/Redux.svg'
-import { ReactComponent as SolidJS } from '../../../../images/icons/SolidJS.svg'
-import { ReactComponent as Ubuntu } from '../../../../images/icons/Ubuntu.svg'
-import { ReactComponent as VirtualBox } from '../../../../images/icons/VirtualBox.svg'
-import { ReactComponent as Vite } from '../../../../images/icons/Vite.svg'
+import './icon-display.css'
 
-import './MainCardBottom.css'
+import { ReactComponent as Apache } from '../../../images/icons/Apache.svg'
+import { ReactComponent as Docker } from '../../../images/icons/Docker.svg';
+import { ReactComponent as Linux } from '../../../images/icons/Linux.svg'
+import { ReactComponent as MySQL } from '../../../images/icons/MySQL.svg';
+import { ReactComponent as Nginx } from '../../../images/icons/NGINX.svg'
+import { ReactComponent as PHP } from '../../../images/icons/PHP.svg'
+import { ReactComponent as Prisma } from '../../../images/icons/Prisma.svg'
+import { ReactComponent as RabbitMQ } from '../../../images/icons/RabbitMQ.svg'
+import { ReactComponent as ReactSVG } from '../../../images/icons/React.svg'
+import { ReactComponent as Redux } from '../../../images/icons/Redux.svg'
+import { ReactComponent as SolidJS } from '../../../images/icons/SolidJS.svg'
+import { ReactComponent as Ubuntu } from '../../../images/icons/Ubuntu.svg'
+import { ReactComponent as VirtualBox } from '../../../images/icons/VirtualBox.svg'
+import { ReactComponent as Vite } from '../../../images/icons/Vite.svg'
+
 
 const techIcons = {
     Apache: Apache,
@@ -36,7 +36,7 @@ const techIcons = {
 }
 
 
-const SingleTechIcon = ({ name, techIconCountArg }) => {
+const SingleTechIcon = ({ name }) => {
     const Component = techIcons[name];
 
     return (
@@ -44,20 +44,16 @@ const SingleTechIcon = ({ name, techIconCountArg }) => {
     )
 }
 
+/**
+ * takes list of technologies used, and uses names to find the correct SVGs
+ * each icon is then created as a react component in SingleTechIcon
+ */
 
-const IconDisplay = () => {
-    
-    // const projectCarousel = useSelector((state) => state.projectCarousel);
-    // const currentProject = projectCarousel.items[projectCarousel.index];
-    // const techList = Object.keys(currentProject.projectTechnology);
-
-    // setTechIconCount(techList.length);
-
+const IconDisplay = (props) => {
     return (
         <div className='bottom all-tech-icons'>
-            {techList.map((name) => (
-
-                <SingleTechIcon name={name} key={name} techIconCountArg={techList.length} />
+            {props.technologies.map((name) => (
+                <SingleTechIcon name={name} key={name}/>
 
             ))}
         </div>

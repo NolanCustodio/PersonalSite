@@ -5,11 +5,11 @@ import ProjectsInfo from '../../features/ProjectText';
 import PersonalInfo from "./PersonalInfo/PersonalInfo";
 import Project from "./Project/Project";
 
-import "./Landing.css";
+import "./landing.css";
 
 const Landing = () =>{
     const windowInfo = useSelector(state => state.windowInfo.index);
-    console.log(windowInfo);
+    // console.log(windowInfo);
 
     // const ProjectsInfo;
 
@@ -19,8 +19,12 @@ const Landing = () =>{
 
             {ProjectsInfo.map((project) => {
                 return <Project 
-                    key={project} 
-                    projectName={project.projectName} 
+                    key={project.projectName} 
+                    projectName={project.projectName}
+                    projectBlurb={project.projectBlurb}
+                    projectGithub={project.projectGithub}
+                    projectSubtext={project.projectSubtext}
+                    projectTechnology={project.projectTechnology} 
                     windowHeight={windowInfo.height} 
                     windowWidth={windowInfo.width}/>
             })}

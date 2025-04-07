@@ -1,4 +1,4 @@
-import './PersonalInfo.css';
+import './personal-info.css';
 
 import { scrollIntoView, ScrollTo } from '../../Navigation';
 import { useSelector } from 'react-redux';

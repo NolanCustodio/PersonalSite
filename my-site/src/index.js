@@ -9,7 +9,7 @@ import windowInfoReducer from './features/windowInfo'
 
 const store = configureStore({
   reducer: {
-    projectCarousel: projectCarouselReducer,
+    // projectCarousel: projectCarouselReducer,
     windowInfo: windowInfoReducer,
   }
 })

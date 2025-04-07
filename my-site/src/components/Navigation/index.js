@@ -31,6 +31,14 @@ export function ScrollTo(height){
     });
 }
 
+export function scrollIntoView(id){
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+        behavior:'smooth',
+        block:'start'
+    });
+}
+
 export function getWindowDimensions(){
     const { innerWidth: width, innerHeight: height } = window;
     return {width, height};
@@ -48,4 +56,4 @@ export function useWindowDimensions(){
 
 }
 
-export default {ScrollTo, getWindowDimensions, useWindowDimensions};
+export default {ScrollTo, scrollIntoView, getWindowDimensions, useWindowDimensions};

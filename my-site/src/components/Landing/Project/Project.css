@@ -1,5 +1,9 @@
 .project{
     text-align: center;
-    margin-top: 500px;
-    margin-bottom: 100px;
+    margin-top: 8%;
+    border: solid black 1px;
+}
+
+.project-name{
+    margin-top: 10%;
 }

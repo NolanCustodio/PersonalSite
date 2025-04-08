@@ -1,4 +1,4 @@
-import {useSelector, useDispatch} from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 import ProjectsInfo from '../../features/ProjectText';
 
@@ -7,37 +7,54 @@ import Project from "./Project/Project";
 
 import "./landing.css";
 
-const Landing = () =>{
+const Landing = () => {
     const windowInfo = useSelector(state => state.windowInfo.index);
     // console.log(windowInfo);
 
-    // const ProjectsInfo;
+    function createProjectComponents(projectsInfo){
+        const rtnComponents = [];
+        for (let i = 0; i < projectsInfo.length; i++) {
+            console.log(projectsInfo[i]);
 
-    return(
+
+            
+            rtnComponents.push(<Project
+                key={projectsInfo[i].projectName}
+                projectName={projectsInfo[i].projectName}
+                projectGithub={projectsInfo[i].projectGithub}
+                projectTechnology={projectsInfo[i].projectTechnology}
+                projectDescription={projectsInfo[i].projectDescription}
+                windowHeight={windowInfo.height}
+                windowWidth={windowInfo.width}
+                nextProject={projectsInfo[i+1].projectName}
+            />)
+        }
+        console.log(rtnComponents);
+        return rtnComponents
+    }
+
+
+    return (
         <div className="content">
-            <PersonalInfo/>
+            <PersonalInfo />
 
-            {ProjectsInfo.map((project) => {
+            {/* {ProjectsInfo[i].map((project) => {
+
+
                 return <Project 
-                    key={project.projectName} 
-                    projectName={project.projectName}
-                    projectGithub={project.projectGithub}
-                    projectTechnology={project.projectTechnology} 
-                    projectDescription={project.projectDescription}
+                    key={projectsInfo[i].projectName} 
+                    projectName={projectsInfo[i].projectName}
+                    projectGithub={projectsInfo[i].projectGithub}
+                    projectTechnology={projectsInfo[i].projectTechnology} 
+                    projectDescription={projectsInfo[i].projectDescription}
                     windowHeight={windowInfo.height} 
-                    windowWidth={windowInfo.width}/>
-            })}
-            {/* {projects.map((project) => {
-                return <Project 
-                    key={project} 
-                    projectName={project} 
-                    windowHeight={windowInfo.height} 
-                    windowWidth={windowInfo.width}/>
+                    windowWidth={windowInfo.width}
+                    nextProject={project}
+                    />
             })} */}
 
-            {/* <Project projectName="Portfolio" windowHeight/>
-            <Project projectName="Synchat"/>
-            <Project projectName="NewsBox"/> */}
+            {createProjectComponents(ProjectsInfo)}
+
         </div>
     )
 }

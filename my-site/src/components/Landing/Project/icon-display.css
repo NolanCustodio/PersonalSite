@@ -1,16 +1,17 @@
 .single-icon{
     justify-content: center;
-    height: 40%;
-    width: 22%;
-    margin: 1%;
+    /* height: 40%; */
+    width: 5vw;
     margin-top: 10vh;
     margin-bottom: 10vh;
+
+    background-color: ;
 }
 
 .all-tech-icons{
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
     justify-content: space-between;
-    align-items: center;
+    margin-left: 8vw;
+    margin-right: 8vw;
 }

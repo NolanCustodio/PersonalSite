@@ -3,6 +3,7 @@ import { React } from 'react';
 import './icon-display.css'
 
 import { ReactComponent as Apache } from '../../../images/icons/Apache.svg'
+import { ReactComponent as Bootstrap } from '../../../images/icons/Bootstrap.svg'
 import { ReactComponent as Docker } from '../../../images/icons/Docker.svg';
 import { ReactComponent as Linux } from '../../../images/icons/Linux.svg'
 import { ReactComponent as MySQL } from '../../../images/icons/MySQL.svg';
@@ -20,6 +21,7 @@ import { ReactComponent as Vite } from '../../../images/icons/Vite.svg'
 
 const techIcons = {
     Apache: Apache,
+    Bootstrap: Bootstrap,
     Docker: Docker,
     Linux: Linux,
     MySQL: MySQL,
@@ -51,7 +53,7 @@ const SingleTechIcon = ({ name }) => {
 
 const IconDisplay = (props) => {
     return (
-        <div className='bottom all-tech-icons'>
+        <div className='all-tech-icons'>
             {props.technologies.map((name) => (
                 <SingleTechIcon name={name} key={name}/>
 

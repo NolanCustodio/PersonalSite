@@ -7,16 +7,17 @@ const Project = (props) =>{
 
     return(
         <div className='project' id={props.projectName} 
-            style={{height: props.windowHeight}}
+            style={{height: (props.windowHeight * .9)}}
         >
             <h1 className='project-name'>
                 Project Name: {props.projectName}
             </h1>
-            <div>
-                <IconDisplay technologies={props.projectTechnology}/>
-            </div>
-            <p>{props.projectBlurb}</p>
-            <p>{props.projectSubtext}</p>
+            <br/>
+            <h1>Tools Used:</h1>
+            <IconDisplay technologies={props.projectTechnology}/>
+            
+            <p>{props.projectDescription}</p>
+
             <button className='next-button'>V</button>
         </div>
     )

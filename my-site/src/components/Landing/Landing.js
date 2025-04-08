@@ -21,10 +21,9 @@ const Landing = () =>{
                 return <Project 
                     key={project.projectName} 
                     projectName={project.projectName}
-                    projectBlurb={project.projectBlurb}
                     projectGithub={project.projectGithub}
-                    projectSubtext={project.projectSubtext}
                     projectTechnology={project.projectTechnology} 
+                    projectDescription={project.projectDescription}
                     windowHeight={windowInfo.height} 
                     windowWidth={windowInfo.width}/>
             })}

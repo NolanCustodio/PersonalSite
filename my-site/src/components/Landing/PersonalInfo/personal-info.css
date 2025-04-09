@@ -1,12 +1,13 @@
-.personal-info-top-half{
-    height: 50vh;
-}
-
-.PersonalInfo{
+.personal-info{
     text-align: center;
     justify-content: center;  
     align-items: center;  
 
+    margin-bottom: 15vh;
+}
+
+.personal-info-top-half{
+    height: 50vh;
 }
 
 .logo{

@@ -15,8 +15,9 @@ import { changeState } from "../../features/windowInfo";
 // }
 
 export function ScrollTo(height){
+    console.log(height);
 
-    const calcHeight = 1.25 * height;
+    const calcHeight = height;
 
     // const anchor = document.querySelector('Synchat')
 

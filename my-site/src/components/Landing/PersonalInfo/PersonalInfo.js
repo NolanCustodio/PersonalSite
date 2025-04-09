@@ -8,7 +8,7 @@ const PersonalInfo = (props) => {
 
 
     return(
-        <div className='PersonalInfo'
+        <div className='personal-info'
             style={{height: props.windowHeight}}
         >
             <div className='personal-info-top-half'>
@@ -29,10 +29,10 @@ const PersonalInfo = (props) => {
             <div className='personal-info-bottom-half'>
                 <button className='to-project1 next-button'
                     onClick={() => {
-                        // ScrollTo(windowInfo.height)}
+                        ScrollTo(windowInfo.height * 1.04);
                         // scrollIntoView('Portfolio');
                         // scrollIntoView('NewsBox');
-                        scrollIntoView('Synchat');
+                        // scrollIntoView('Synchat');
                     }}
                 >
                     V

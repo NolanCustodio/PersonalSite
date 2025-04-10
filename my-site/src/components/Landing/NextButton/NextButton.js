@@ -9,16 +9,26 @@ const partitions = [
 ]
 
 const NextButton = (props) => {
+    let rtnComponent;
 
-    return (
-        <button className='next-button'
+
+    if (props.projectIndex + 1 > partitions.length){
+        rtnComponent = <div></div>
+    }else{
+        const nextProject = partitions[props.projectIndex + 2]
+        rtnComponent = <button 
+            className="next-button"
             onClick={() => {
-                ScrollTo(props.windowPosition);
+                scrollIntoView(nextProject);
             }}
-        >
+        >   
             V
         </button>
-    )
+    }
+
+    
+
+    return (rtnComponent)
 }
 
 export default NextButton;

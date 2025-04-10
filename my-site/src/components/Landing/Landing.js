@@ -18,7 +18,8 @@ const Landing = () => {
         for (let i = 0; i < projectsInfo.length; i++) {
             // console.log(projectsInfo[i]);
             rtnComponents.push(<Project
-                key={projectsInfo[i].projectName}
+                key={i}
+                index={i}
                 projectName={projectsInfo[i].projectName}
                 projectGithub={projectsInfo[i].projectGithub}
                 projectTechnology={projectsInfo[i].projectTechnology}

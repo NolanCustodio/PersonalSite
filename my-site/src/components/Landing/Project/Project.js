@@ -7,18 +7,18 @@ import NextButton from '../NextButton/NextButton';
 
 const Project = (props) =>{
     const windowInfo = useSelector((state) => state.windowInfo.index);
-    // console.log(props.windowPosition);
+    // console.log(props.index);
     let nextButton;
 
     if(props.projectName === 'NewsBox'){
         nextButton = <div></div>
     }else{
-        nextButton = <NextButton/>
+        nextButton = <NextButton projectName={props.projectName} projectIndex={props.index}/>
     }
 
     return(
         <div className='project' id={props.projectName} 
-            style={{height: (windowInfo.height * .9)}}
+            style={{height: (windowInfo.height)}}
         >
             <h1 className='project-name'>
                 Project Name: {props.projectName}

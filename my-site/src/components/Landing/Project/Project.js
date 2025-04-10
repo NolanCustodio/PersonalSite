@@ -3,10 +3,18 @@ import { ScrollTo } from '../../Navigation';
 import IconDisplay from './IconDisplay';
 
 import './project.css';
+import NextButton from '../NextButton/NextButton';
 
 const Project = (props) =>{
     const windowInfo = useSelector((state) => state.windowInfo.index);
     // console.log(props.windowPosition);
+    let nextButton;
+
+    if(props.projectName === 'NewsBox'){
+        nextButton = <div></div>
+    }else{
+        nextButton = <NextButton/>
+    }
 
     return(
         <div className='project' id={props.projectName} 
@@ -21,13 +29,7 @@ const Project = (props) =>{
             
             <p>{props.projectDescription}</p>
 
-            <button className='next-button'
-                onClick={() =>{
-                    ScrollTo(props.windowPosition);
-                }}
-            >
-                V
-            </button>
+            {nextButton}
         </div>
     )
 }

@@ -18,13 +18,11 @@ const Landing = () => {
         for (let i = 0; i < projectsInfo.length; i++) {
             // console.log(projectsInfo[i]);
             rtnComponents.push(<Project
-                key={i}
+                key={projectsInfo[i].projectName}
                 projectName={projectsInfo[i].projectName}
                 projectGithub={projectsInfo[i].projectGithub}
                 projectTechnology={projectsInfo[i].projectTechnology}
                 projectDescription={projectsInfo[i].projectDescription}
-                windowPosition={(windowInfo.height * 1.02) * (i + 2)}
-                // nextProject={projectsInfo[i+1].projectName}
             />)
         }
         // console.log(rtnComponents);

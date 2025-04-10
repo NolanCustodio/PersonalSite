@@ -29,8 +29,8 @@ const PersonalInfo = (props) => {
             <div className='personal-info-bottom-half'>
                 <button className='to-project1 next-button'
                     onClick={() => {
-                        ScrollTo(windowInfo.height * 1.04);
-                        // scrollIntoView('Portfolio');
+                        // ScrollTo(windowInfo.height * 1.04);
+                        scrollIntoView('Portfolio');
                         // scrollIntoView('NewsBox');
                         // scrollIntoView('Synchat');
                     }}

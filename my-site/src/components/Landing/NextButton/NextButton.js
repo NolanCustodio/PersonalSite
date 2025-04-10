@@ -1,5 +1,5 @@
 
-import { scrollIntoView } from "../../Navigation";
+import { ScrollTo, scrollIntoView } from "../../Navigation";
 
 const partitions = [
     'PersonalInfo',
@@ -8,12 +8,16 @@ const partitions = [
     'NewsBox'
 ]
 
-const NextButton = () =>{
+const NextButton = (props) => {
 
-    return(
-        <div>
-            Button
-        </div>
+    return (
+        <button className='next-button'
+            onClick={() => {
+                ScrollTo(props.windowPosition);
+            }}
+        >
+            V
+        </button>
     )
 }
 

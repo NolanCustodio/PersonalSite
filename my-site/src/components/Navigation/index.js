@@ -15,7 +15,7 @@ import { changeState } from "../../features/windowInfo";
 // }
 
 export function ScrollTo(height){
-    console.log(height);
+    // console.log(height);
 
     const calcHeight = height;
 

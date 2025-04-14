@@ -1,6 +1,18 @@
 .entire-page{
     display: flex;
     justify-content: center;
+
+    /* fonts */
+
+    /* font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal; */
+
+    /* font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal; */
 }
 
 /* for all of the background divs */

@@ -8,8 +8,9 @@
     height: 10vh;
     width: 90vw;
 
-    border: solid  #109037 5px;
-    background-color:  #a4e7b8; 
+    border: solid  #109037 2px;
+    background-color:  #a4e7b8;
+    border-radius: 4%; 
 
     transition: transform 0.3s ease 0s;
 }

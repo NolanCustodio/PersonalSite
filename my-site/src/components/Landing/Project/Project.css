@@ -4,6 +4,15 @@
     border: solid black 1px;
 }
 
-.project-name{
+/* .project-name{
     margin-top: 10%;
+} */
+
+.project-top-half{
+    margin-top: 10%;
+    height: 80%;
+}
+
+.project-bottom-half{
+    height: 8%;
 }

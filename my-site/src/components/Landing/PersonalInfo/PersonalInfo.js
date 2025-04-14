@@ -1,7 +1,9 @@
 import { useSelector } from 'react-redux';
 
-import { scrollIntoView, ScrollTo } from '../../Navigation';
+import { scrollIntoView} from '../../Navigation';
 import ProjectCard from './ProjectCards/ProjectCard';
+
+import { ReactComponent as ArrowDown } from "../../../images/navigation/ArrowDown.svg"
 
 import './personal-info.css';
 
@@ -28,13 +30,13 @@ const PersonalInfo = () => {
             </div>
 
             <div className='personal-info-bottom-half'>
-                <button className='to-project1 next-button'
+                <ArrowDown className='to-project1 next-button'
                     onClick={() => {
                         scrollIntoView('Portfolio');
                     }}
                 >
                     V
-                </button>
+                </ArrowDown>
             </div>
         </div>
     )

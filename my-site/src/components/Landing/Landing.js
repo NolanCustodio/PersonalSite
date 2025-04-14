@@ -35,21 +35,6 @@ const Landing = () => {
         <div className="content">
             <PersonalInfo />
 
-            {/* {ProjectsInfo[i].map((project) => {
-
-
-                return <Project 
-                    key={projectsInfo[i].projectName} 
-                    projectName={projectsInfo[i].projectName}
-                    projectGithub={projectsInfo[i].projectGithub}
-                    projectTechnology={projectsInfo[i].projectTechnology} 
-                    projectDescription={projectsInfo[i].projectDescription}
-                    windowHeight={windowInfo.height} 
-                    windowWidth={windowInfo.width}
-                    nextProject={project}
-                    />
-            })} */}
-
             {createProjectComponents(ProjectsInfo)}
 
         </div>

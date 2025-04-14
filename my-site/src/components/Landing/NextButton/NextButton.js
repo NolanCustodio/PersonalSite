@@ -1,5 +1,8 @@
+import React from "react";
 
-import { ScrollTo, scrollIntoView } from "../../Navigation";
+import { scrollIntoView } from "../../Navigation";
+
+import { ReactComponent as ArrowDown } from '../../../images/navigation/ArrowDown.svg';
 
 const partitions = [
     'PersonalInfo',
@@ -8,22 +11,23 @@ const partitions = [
     'NewsBox'
 ]
 
+
+
 const NextButton = (props) => {
     let rtnComponent;
-
 
     if (props.projectIndex + 1 > partitions.length){
         rtnComponent = <div></div>
     }else{
+        // rtnComponent = ArrowDown;
         const nextProject = partitions[props.projectIndex + 2]
-        rtnComponent = <button 
+
+        rtnComponent = <ArrowDown
             className="next-button"
             onClick={() => {
                 scrollIntoView(nextProject);
             }}
-        >   
-            V
-        </button>
+        />    
     }
 
     

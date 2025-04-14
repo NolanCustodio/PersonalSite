@@ -1,13 +1,17 @@
-
+import { scrollIntoView } from "../../../Navigation";
 
 import "./project-card.css"
 
 const ProjectCard = (props) =>{
 
     return(
-        <div className="project-card">
+        <button className="project-card"
+            onClick={() =>{
+                scrollIntoView(props.projectName);
+            }}
+        >
             {props.projectName}
-        </div>
+        </button>
     )
 }
 

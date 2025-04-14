@@ -1,15 +1,16 @@
-import './personal-info.css';
-
-import { scrollIntoView, ScrollTo } from '../../Navigation';
 import { useSelector } from 'react-redux';
 
-const PersonalInfo = (props) => {
-    const windowInfo = useSelector((state) => state.windowInfo.index);
+import { scrollIntoView, ScrollTo } from '../../Navigation';
+import ProjectCard from './ProjectCards/ProjectCard';
 
+import './personal-info.css';
+
+const PersonalInfo = () => {
+    const windowInfo = useSelector((state) => state.windowInfo.index);
 
     return(
         <div className='personal-info'
-            style={{height: props.windowHeight}}
+            style={{height: windowInfo.height * .95 }}
         >
             <div className='personal-info-top-half'>
                 <div className="logo">
@@ -17,22 +18,19 @@ const PersonalInfo = (props) => {
                 </div>
                 <h1 >Nolan Ley Custodio</h1>
                 <p>Small Description</p>
-                <p>{`window size H:${windowInfo.height} W:${windowInfo.width}`}</p>
+                {/* <p>{`window size H:${windowInfo.height} W:${windowInfo.width}`}</p> */}
 
                 <div className='project-list'>
-                    <div>Project</div>
-                    <div>Project</div>
-                    <div>Project</div>
+                    <ProjectCard projectName="Portfolio"/>
+                    <ProjectCard projectName="Synchat"/>
+                    <ProjectCard projectName="NewsBox"/>
                 </div>
             </div>
 
             <div className='personal-info-bottom-half'>
                 <button className='to-project1 next-button'
                     onClick={() => {
-                        // ScrollTo(windowInfo.height * 1.04);
                         scrollIntoView('Portfolio');
-                        // scrollIntoView('NewsBox');
-                        // scrollIntoView('Synchat');
                     }}
                 >
                     V

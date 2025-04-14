@@ -3,11 +3,15 @@
     justify-content: center;  
     align-items: center;  
 
-    margin-bottom: 15vh;
+    border-bottom: solid black 1px;
+
+    /* flex-grow: 2; */
+
+    /* margin-bottom: 15vh; */
 }
 
 .personal-info-top-half{
-    height: 50vh;
+    height: 70%;
 }
 
 .logo{
@@ -26,23 +30,16 @@
 .project-list{
     display: flex;
     justify-content: space-between;
-
-    margin: auto;
-
-    max-width: 30vw;
 }
 
 .personal-info-bottom-half{
-    display: flex;
-    justify-content: center;
-    position: relative;
-
-    /* change this as components are made */
-    height: 35vh;
+    height: 25%;
 }
 
 .to-project1{
-    margin-top: 30vh;
-    /* position: absolute; */
-    /* bottom: 0; */
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
 }

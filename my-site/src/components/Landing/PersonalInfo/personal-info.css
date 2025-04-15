@@ -11,7 +11,7 @@
 }
 
 .personal-info-top-half{
-    height: 80%;
+    height: 90%;
 }
 
 .logo{
@@ -20,7 +20,7 @@
     height: 20vh;
     width: 20vh;
 
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-bottom: 5vh;
     
     border-radius: 50%;
@@ -33,13 +33,9 @@
 }
 
 .personal-info-bottom-half{
-    height: 15%;
+    height: 5%;
 }
 
 .to-project1{
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
+
 }

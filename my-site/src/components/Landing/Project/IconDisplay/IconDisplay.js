@@ -2,21 +2,21 @@ import { React } from 'react';
 
 import './icon-display.css'
 
-import { ReactComponent as Apache } from '../../../../images/icons/Apache.svg'
-import { ReactComponent as Bootstrap } from '../../../../images/icons/Bootstrap.svg'
-import { ReactComponent as Docker } from '../../../../images/icons/Docker.svg';
-import { ReactComponent as Linux } from '../../../../images/icons/Linux.svg'
-import { ReactComponent as MySQL } from '../../../../images/icons/MySQL.svg';
-import { ReactComponent as Nginx } from '../../../../images/icons/NGINX.svg'
-import { ReactComponent as PHP } from '../../../../images/icons/PHP.svg'
-import { ReactComponent as Prisma } from '../../../../images/icons/Prisma.svg'
-import { ReactComponent as RabbitMQ } from '../../../../images/icons/RabbitMQ.svg'
-import { ReactComponent as ReactSVG } from '../../../../images/icons/React.svg'
-import { ReactComponent as Redux } from '../../../../images/icons/Redux.svg'
-import { ReactComponent as SolidJS } from '../../../../images/icons/SolidJS.svg'
-import { ReactComponent as Ubuntu } from '../../../../images/icons/Ubuntu.svg'
-import { ReactComponent as VirtualBox } from '../../../../images/icons/VirtualBox.svg'
-import { ReactComponent as Vite } from '../../../../images/icons/Vite.svg'
+import { ReactComponent as Apache } from '../../../../images/tech-icons/Apache.svg'
+import { ReactComponent as Bootstrap } from '../../../../images/tech-icons/Bootstrap.svg'
+import { ReactComponent as Docker } from '../../../../images/tech-icons/Docker.svg';
+import { ReactComponent as Linux } from '../../../../images/tech-icons/Linux.svg'
+import { ReactComponent as MySQL } from '../../../../images/tech-icons/MySQL.svg';
+import { ReactComponent as Nginx } from '../../../../images/tech-icons/NGINX.svg'
+import { ReactComponent as PHP } from '../../../../images/tech-icons/PHP.svg'
+import { ReactComponent as Prisma } from '../../../../images/tech-icons/Prisma.svg'
+import { ReactComponent as RabbitMQ } from '../../../../images/tech-icons/RabbitMQ.svg'
+import { ReactComponent as ReactSVG } from '../../../../images/tech-icons/React.svg'
+import { ReactComponent as Redux } from '../../../../images/tech-icons/Redux.svg'
+import { ReactComponent as SolidJS } from '../../../../images/tech-icons/SolidJS.svg'
+import { ReactComponent as Ubuntu } from '../../../../images/tech-icons/Ubuntu.svg'
+import { ReactComponent as VirtualBox } from '../../../../images/tech-icons/VirtualBox.svg'
+import { ReactComponent as Vite } from '../../../../images/tech-icons/Vite.svg'
 
 
 const techIcons = {

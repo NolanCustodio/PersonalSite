@@ -4,14 +4,14 @@ import { scrollIntoView } from "../../Navigation";
 
 import { ReactComponent as ArrowDown } from '../../../images/navigation/ArrowDown.svg';
 
+import './next-button.css'
+
 const partitions = [
     'PersonalInfo',
     'Portfolio',
     'Synchat',
     'NewsBox'
 ]
-
-
 
 const NextButton = (props) => {
     let rtnComponent;

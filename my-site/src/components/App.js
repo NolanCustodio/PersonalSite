@@ -10,12 +10,17 @@ import './App.css';
 // import NavBar from './NavBar/NavBar';
 
 import Landing from './Landing/Landing';
-import { changeState } from '../features/windowInfo';
+import IntersectionObserver from './IntersectionObserver/IntersectionObserver';
+
 
 import { useWindowDimensions } from './Navigation';
 
+
+
+
 function App() {
     useWindowDimensions();
+    // IntersectionObserver();
 
     return (
         <div className='entire-page'>

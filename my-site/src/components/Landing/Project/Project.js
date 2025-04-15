@@ -16,7 +16,7 @@ const Project = (props) => {
     if (props.projectName === 'NewsBox') {
         nextButton = <div></div>
     } else {
-        nextButton = <NextButton projectName={props.projectName} projectIndex={props.index} />
+        nextButton = <NextButton projectIndex={props.index} />
     }
 
     return (

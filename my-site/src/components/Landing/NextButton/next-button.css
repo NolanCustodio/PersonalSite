@@ -1,5 +1,5 @@
 
-@keyframes next-button-hop {
+/* @keyframes next-button-hop {
     0% {
         transform: translateY(0px);
     }
@@ -15,7 +15,8 @@
     100% {
         transform: translateY(0px);
     }
-}
+} */
+
 
 .next-button {
     height: 50px;
@@ -23,16 +24,14 @@
     border-radius: 50%;
     border: 1px solid black;
 
-    animation: next-button-hop 1s ease-in;
-    animation-iteration-count: infinite;
-    animation-delay: 3s;
+    /* animation: next-button-hop ;
+    animation-duration: 6s;
+    animation-iteration-count: infinite; */
 
-    /* transition: transform 0.3s ease 0s; */
+    transition: transform 0.3s ease 0s;
 }
 
 .next-button:hover {
-    animation:none;
-
     transform: translateY(-10px);
     text-decoration: none;
 }

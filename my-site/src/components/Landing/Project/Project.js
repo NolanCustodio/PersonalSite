@@ -20,21 +20,23 @@ const Project = (props) => {
     }
 
     return (
-        <div className='project' id={props.projectName}
-            style={{ height: (windowInfo.height * .98) }}
-        >
-            <div className='project-top-half'>
-                <h1 className='project-name'>
-                    Project Name: {props.projectName}
-                </h1>
-                <br />
-                <h1>Tools Used:</h1>
-                <IconDisplay technologies={props.projectTechnology} />
+        <div className='project-spacing' id={props.projectName}>
+            <div className='project'
+                style={{ height: (windowInfo.height * .94)}}
+            >
+                <div className='project-top-half'>
+                    <h1 className='project-name'>
+                        Project Name: {props.projectName}
+                    </h1>
+                    <br />
+                    <h1>Tools Used:</h1>
+                    <IconDisplay technologies={props.projectTechnology} />
 
-                <p>{props.projectDescription}</p>
-            </div>
-            <div className='project-bottom-half'>
-                {nextButton}
+                    <p>{props.projectDescription}</p>
+                </div>
+                <div className='project-bottom-half'>
+                    {nextButton}
+                </div>
             </div>
         </div>
     )

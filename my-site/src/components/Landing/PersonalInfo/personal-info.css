@@ -27,6 +27,12 @@
     border: black 1px solid;
 }
 
+.links{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
 .project-list{
     display: flex;
     justify-content: space-between;

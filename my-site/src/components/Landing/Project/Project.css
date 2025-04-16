@@ -1,11 +1,20 @@
-.project{
-    text-align: center;
+.project-spacing{
     margin-top: 8%;
+    /* height: 80px; */
+    border: solid blue 1px;
+    /* border: solid whitesmoke 1px; */
+
+}
+
+.project{
+    margin-top: 2%;
+    text-align: center;
+
     border: solid black 1px;
 }
 
 .project-top-half{
-    margin-top: 8%;
+    margin-top: 6%;
     height: 80%;
 }
 

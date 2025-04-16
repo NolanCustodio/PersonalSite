@@ -20,7 +20,9 @@ const PersonalInfo = () => {
                     N
                 </div>
                 <h1 >Nolan Ley Custodio</h1>
-                <p>Small Description</p>
+                <div className='links'>
+                    <p>Resume</p><p>Github</p>
+                </div>
                 {/* <p>{`window size H:${windowInfo.height} W:${windowInfo.width}`}</p> */}
 
                 <div className='project-list'>

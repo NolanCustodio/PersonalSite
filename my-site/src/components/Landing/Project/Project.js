@@ -22,7 +22,7 @@ const Project = (props) => {
     return (
         <div className='project-spacing' id={props.projectName}>
             <div className='project'
-                style={{ height: (windowInfo.height * .94)}}
+                style={{ height: (windowInfo.height * .90)}}
             >
                 <div className='project-top-half'>
                     <h1 className='project-name'>
@@ -32,7 +32,7 @@ const Project = (props) => {
                     <h1>Tools Used:</h1>
                     <IconDisplay technologies={props.projectTechnology} />
 
-                    <p>{props.projectDescription}</p>
+                    <p className='projectDescription'>{props.projectDescription}</p>
                 </div>
                 <div className='project-bottom-half'>
                     {nextButton}

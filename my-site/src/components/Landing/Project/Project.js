@@ -1,4 +1,4 @@
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 
 import { ScrollTo } from '../../Navigation';
 
@@ -9,7 +9,7 @@ import './project.css';
 
 
 const Project = (props) => {
-    const windowInfo = useSelector((state) => state.windowInfo.index);
+    // const windowInfo = useSelector((state) => state.windowInfo.index);
     // console.log(props.index);
     let nextButton;
 
@@ -21,9 +21,7 @@ const Project = (props) => {
 
     return (
         <div className='project-spacing' id={props.projectName}>
-            <div className='project'
-                style={{ height: (windowInfo.height * .90)}}
-            >
+            <div className='project'>
                 <div className='project-top-half'>
                     <h1 className='project-name'>
                         Project Name: {props.projectName}
@@ -32,7 +30,7 @@ const Project = (props) => {
                     <h1>Tools Used:</h1>
                     <IconDisplay technologies={props.projectTechnology} />
 
-                    <p className='projectDescription'>{props.projectDescription}</p>
+                    <p className='project-description'>{props.projectDescription}</p>
                 </div>
                 <div className='project-bottom-half'>
                     {nextButton}

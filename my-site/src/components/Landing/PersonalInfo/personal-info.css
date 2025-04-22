@@ -3,6 +3,8 @@
     justify-content: center;  
     align-items: center;  
 
+    height: 95vh;
+
     border-bottom: solid black 1px;
 
     /* flex-grow: 2; */
@@ -42,7 +44,11 @@
     height: 5%;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 810px) {
+    .personal-info-top-half{
+        height: 92%;
+    }
+
     .project-list{
         flex-wrap: wrap;
         justify-content: center;

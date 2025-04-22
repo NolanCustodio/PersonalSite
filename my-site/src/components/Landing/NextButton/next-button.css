@@ -35,3 +35,11 @@
     transform: translateY(-10px);
     text-decoration: none;
 }
+
+@media only screen and (max-width: 810px){
+    .next-button{
+        height: 40px;
+        width: 40px;
+    }
+
+}

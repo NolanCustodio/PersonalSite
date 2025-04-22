@@ -1,4 +1,4 @@
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 
 import { scrollIntoView} from '../../Navigation';
 import ProjectCard from './ProjectCards/ProjectCard';
@@ -9,12 +9,10 @@ import { ReactComponent as ArrowDown } from "../../../images/navigation/ArrowDow
 import './personal-info.css';
 
 const PersonalInfo = () => {
-    const windowInfo = useSelector((state) => state.windowInfo.index);
+    // const windowInfo = useSelector((state) => state.windowInfo.index);
 
     return(
-        <div className='personal-info'
-            style={{height: windowInfo.height * .95 }}
-        >
+        <div className='personal-info'>
             <div className='personal-info-top-half'>
                 <div className="logo">
                     N

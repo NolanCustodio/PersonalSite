@@ -6,7 +6,7 @@
     align-items: center;
 
     height: 10vh;
-    min-width: 18vw;
+    width: 18vw;
 
     border: solid  #109037 2px;
     background-color:  #a4e7b8;
@@ -20,7 +20,7 @@
     text-decoration: none;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 810px) {
     .project-card{
         min-width: 60vw;
     }

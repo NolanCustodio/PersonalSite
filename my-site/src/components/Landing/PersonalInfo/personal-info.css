@@ -13,7 +13,7 @@
 }
 
 .personal-info-top-half{
-    height: 90%;
+    height: 85vh;
 }
 
 .logo{
@@ -38,13 +38,28 @@
 .project-list{
     display: flex;
     justify-content: space-between;
+    margin: 10vh 0 0 0;
 }
 
 .personal-info-bottom-half{
+    /* margin-top: 2vh; */
     height: 5%;
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 1000px) {
+    .personal-info-top-half{
+        height: 88vh;
+    }
+
+    .project-list{
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin: 0 0 0 0;
+    }
+}
+
+/* @media only screen and (max-width: 810px) {
     .personal-info-top-half{
         height: 92%;
     }
@@ -53,4 +68,4 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-}
+} */

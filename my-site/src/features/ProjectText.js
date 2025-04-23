@@ -46,7 +46,7 @@ const ProjectsInfo = [
         'projectGithub': `https://github.com/jcs78/News-Box-Application`,
         'projectSubtext': `The Spark`,
         'projectDescription': `
-            Multi-machine group project that had a great impact on my view on programming.
+            Multi-machine project that had a great impact on my view on programming.
             This may have been for a Capstone project for my Bachelor's Degree the instructions were strict and clear. Build the skeleton for an application.
             The way this project was structed was intended to mimick working condition as best as possible.
         `,

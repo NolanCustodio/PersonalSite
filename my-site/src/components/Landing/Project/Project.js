@@ -27,7 +27,7 @@ const Project = (props) => {
                         Project Name: {props.projectName}
                     </h1>
                     <br />
-                    <h1>Tools Used:</h1>
+                    <h1>Tools:</h1>
                     <IconDisplay technologies={props.projectTechnology} />
 
                     <p className='project-description'>{props.projectDescription}</p>

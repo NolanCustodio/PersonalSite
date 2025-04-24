@@ -1,23 +1,8 @@
 .project-card{
     margin: 5%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     height: 10vh;
     width: 18vw;
-
-    border: solid  #109037 2px;
-    background-color:  #a4e7b8;
-    border-radius: 4%; 
-
-    transition: transform 0.3s ease 0s;
-}
-
-.project-card:hover{
-    transform: translateY(-10px);
-    text-decoration: none;
 }
 
 @media only screen and (max-width: 1000px) {

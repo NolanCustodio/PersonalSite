@@ -1,0 +1,16 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid  #109037 2px;
+    background-color:  #a4e7b8;
+    border-radius: 3%; 
+
+    transition: transform 0.3s ease 0s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    text-decoration: none;
+}

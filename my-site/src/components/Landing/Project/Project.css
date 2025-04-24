@@ -15,8 +15,14 @@
 }
 
 .project-top-half{
-    margin-top: 6%;
+    margin-top: 4%;
     height: 80%;
+}
+
+.project-name{
+    width: 60%;
+    height: 12vh;
+    margin: auto;
 }
 
 .project-description{

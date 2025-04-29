@@ -5,7 +5,7 @@
 
     border: solid  #109037 2px;
     background-color:  #a4e7b8;
-    border-radius: 3%; 
+    border-radius: 8px; 
 
     transition: transform 0.3s ease 0s;
 }

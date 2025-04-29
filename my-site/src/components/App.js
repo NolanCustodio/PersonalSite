@@ -10,6 +10,7 @@ import './App.css';
 // import NavBar from './NavBar/NavBar';
 
 import Landing from './Landing/Landing';
+import NavBar from './NavBar/NavBar';
 // import IntersectionObserver from './IntersectionObserver/IntersectionObserver';
 
 
@@ -20,8 +21,11 @@ function App() {
     // IntersectionObserver();
 
     return (
-        <div className='entire-page'>
-            <Landing/>
+        <div>
+            <NavBar/>
+            <div className='entire-page'>
+                <Landing />
+            </div>
         </div>
     )
 }

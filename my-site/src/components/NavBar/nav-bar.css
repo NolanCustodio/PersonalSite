@@ -1,4 +1,27 @@
 .my-navbar{
+    display: flex;
+    justify-content: center;
+    /* margin-inline: max(); */
+    /* margin-inline: max(30px,50% - 500px / 2); */
+
+    position: sticky;
+    top: 0;
+    
+    
+    background-color: gray;
+    
+    z-index: 1020;
+    /* left: 0; */
+    /* right: 0; */
+}
+
+.nav-item{
+    margin:auto;
+    /* margin-inline: max(30px,50% - 500px / 2); */
+    max-width: 33%;
+}
+
+/* .my-navbar{
     display: block;
 }
 
@@ -21,4 +44,4 @@
     .my-email{
         margin: auto;
     }
-}
+} */

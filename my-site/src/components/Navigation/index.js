@@ -4,7 +4,7 @@ import { changeState } from "../../features/windowInfo";
 
 
 export function scrollIntoView(id){
-    console.log(id);
+    // console.log(id);
     let element = document.getElementById(id);
 
     element.scrollIntoView({

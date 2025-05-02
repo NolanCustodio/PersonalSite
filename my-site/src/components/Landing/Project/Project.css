@@ -1,17 +1,25 @@
 .project-spacing{
     margin-top: 8%;
     /* height: 80px; */
-    border: solid blue 1px;
+
+    /* should be same color as container that holds all elements */
+    border: solid #F0EDEE 1px;
     /* border: solid whitesmoke 1px; */
 
 }
 
 .project{
     height: 90vh;
-    margin-top: 2%;
+    margin-top: 4%;
     text-align: center;
 
-    border: solid black 1px;
+    border: solid #F0EDEE 1px;
+    border-radius: 8px;
+    background-color: #1B998B;
+
+    /* background-color: #F8E9E9; */
+    /* background-color: #109037; */
+    /* background-color: #394648; */
 }
 
 .project-top-half{

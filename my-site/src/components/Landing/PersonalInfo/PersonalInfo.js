@@ -18,9 +18,10 @@ const PersonalInfo = () => {
                     N
                 </div>
                 <h1 >Nolan Ley Custodio</h1>
-                <div className='links'>
+                
+                {/* <div className='links'>
                     <p>Resume</p><p>Github</p>
-                </div>
+                </div> */}
                 {/* <p>{`window size H:${windowInfo.height} W:${windowInfo.width}`}</p> */}
 
                 <div className='project-list'>

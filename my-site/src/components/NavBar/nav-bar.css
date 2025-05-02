@@ -8,7 +8,7 @@
     top: 0;
     
     
-    background-color: gray;
+    background-color: #454545;
     
     z-index: 1020;
     /* left: 0; */
@@ -16,9 +16,27 @@
 }
 
 .nav-item{
-    margin:auto;
-    /* margin-inline: max(30px,50% - 500px / 2); */
-    max-width: 33%;
+    height: 3vh;
+    width: 25%;
+
+    color: white;
+}
+
+.left{
+    text-align: left;
+
+    margin-right: auto;
+}
+.middle{
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.right{
+    text-align: right;
+
+    margin-left: auto;
 }
 
 /* .my-navbar{

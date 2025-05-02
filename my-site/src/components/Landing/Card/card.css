@@ -3,8 +3,10 @@
     justify-content: center;
     align-items: center;
 
-    border: solid  #109037 2px;
-    background-color:  #a4e7b8;
+    /* border: solid  #109037 2px; */
+    /* background-color:  #F8E9E9; */
+    /* background-color:  #109037; */
+    /* background-color:  #a4e7b8; */
     border-radius: 8px; 
 
     transition: transform 0.3s ease 0s;

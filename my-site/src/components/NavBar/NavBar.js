@@ -8,14 +8,14 @@ const NavBar = () => {
 
     return(
         <div className='navbar my-navbar'>
-            <div className='nav-item'>
+            <div className='nav-item left'>
                 Logo
             </div>
-            <div className='nav-item'>
+            <div className='nav-item middle'>
                 Resume | Github
             </div>
-            <div className='nav-item'>
-                adsfouhasdf;oiasd;lkjfh button
+            <div className='nav-item right'>
+                button
             </div>
         </div>
     )

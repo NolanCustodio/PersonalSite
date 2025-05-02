@@ -5,9 +5,10 @@
 
     margin: 2%;
 
-    /* margin-top: 3%;
-    margin-left: 3%;
-    margin-right: 3%; */
+    border: black solid 1px;
+    border-radius: 8px;
+
+    padding: 1%;
 }
 
 .all-tech-icons{

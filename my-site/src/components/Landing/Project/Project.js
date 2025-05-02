@@ -24,7 +24,7 @@ const Project = (props) => {
             <div className='project'>
                 <div className='project-top-half'>
                     <h1 className='card project-name'>
-                        Project Name: {props.projectName}
+                        Project: {props.projectName}
                     </h1>
                     <br />
                     <h1>Tools:</h1>

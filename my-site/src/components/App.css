@@ -4,12 +4,13 @@
 
     /* fonts */
 
-    /* font-family: "Playwrite DE Grund", cursive;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal; */
+    font-family: "Nunito", sans-serif;
 
-    font-family: "Inter", sans-serif;
+    /* font-family: "Playwrite DE Grund", cursive; */
+
+    /* font-family: "Inter", sans-serif; */
+
+
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;

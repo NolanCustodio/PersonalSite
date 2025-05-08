@@ -24,6 +24,7 @@ const Landing = () => {
                 projectGithub={projectsInfo[i].projectGithub}
                 projectTechnology={projectsInfo[i].projectTechnology}
                 projectDescription={projectsInfo[i].projectDescription}
+                projectDescriptionTest={projectsInfo[i].projectDescriptionTest}
             />)
         }
         // console.log(rtnComponents);

@@ -9,6 +9,13 @@ const ProjectsInfo = [
             The goal of this site was to make a very simple place to test and use tools while going through an entire development process.
             Simple and dynamic web page creation, containerization with simple web server, and easy deployment that still allowed options.
         `,
+        'projectDescriptionTest':[
+            `Thank you for taking a look at my Portfolio!`,
+            `The goal of this site was to make a very simple place to test and use tools while 
+            going through an entire development process.`,
+            `Simple and dynamic web page creation, containerization with simple web server, 
+            and easy deployment that still allowed options.`
+        ],
         'projectTechnology': [
             'React',
             'Redux',
@@ -28,6 +35,13 @@ const ProjectsInfo = [
             The focus of this application is to help people planning with each other.
             There are many apps and websites that help people schedule professionaly and I hope to create something much more suited for casual use. 
         `,
+        'projectDescriptionTest':[
+            `Thank you for taking a look at my Portfolio!`,
+            `The goal of this site was to make a very simple place to test and use tools while 
+            going through an entire development process.`,
+            `Simple and dynamic web page creation, containerization with simple web server, 
+            and easy deployment that still allowed options.`
+        ],
         'projectTechnology': [
             'Docker',
             'Nginx',
@@ -50,6 +64,13 @@ const ProjectsInfo = [
             This may have been for a Capstone project for my Bachelor's Degree the instructions were strict and clear. Build the skeleton for an application.
             The way this project was structed was intended to mimick working condition as best as possible.
         `,
+        'projectDescriptionTest':[
+            `Thank you for taking a look at my Portfolio!`,
+            `The goal of this site was to make a very simple place to test and use tools while 
+            going through an entire development process.`,
+            `Simple and dynamic web page creation, containerization with simple web server, 
+            and easy deployment that still allowed options.`
+        ],
         'projectTechnology': [
             'PHP',
             'VirtualBox',

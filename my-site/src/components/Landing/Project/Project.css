@@ -1,16 +1,16 @@
 .project-spacing{
-    margin-top: 8%;
-    /* height: 80px; */
+    margin-top: 4vh;
+    /* height: 8vh; */
 
     /* should be same color as container that holds all elements */
-    border: solid #F0EDEE 1px;
-    /* border: solid whitesmoke 1px; */
+    border: solid #FFFEFA 1px;
+    /* border: solid black 1px; */
 
 }
 
 .project{
     height: 90vh;
-    margin-top: 4%;
+    margin-top: 8vh;
     text-align: center;
 
     border: solid black 1px;
@@ -50,6 +50,12 @@
     height: 20%;
     margin: auto;
 }
+
+.description-index-1{
+    border-left: solid black 1px ;
+    border-right: solid black 1px ;
+}
+
 .single-project-description{
     width: 33%;
     margin: auto;

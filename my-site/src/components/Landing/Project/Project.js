@@ -13,7 +13,7 @@ const ProjectDescription = (props) => {
 
     for(let i = 0; i < 3; i++){
         rtnComponent.push(
-            <div className='single-project-description' key={i}>
+            <div className={'single-project-description description-index-' + i} key={i}>
                 {props.projectDescription[i]}
             </div>
         )

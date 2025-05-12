@@ -13,7 +13,7 @@ const ProjectsInfo = [
             `Thank you for taking a look at my Portfolio!`,
             `The goal of this site was to make a very simple place to test and use tools while 
             going through an entire development process.`,
-            `Simple and dynamic web page creation, containerization with simple web server, 
+            `Simple and dynamic web page creation, containerization for React with NGINX, 
             and easy deployment that still allowed options.`
         ],
         'projectTechnology': [

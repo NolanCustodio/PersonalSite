@@ -36,11 +36,9 @@ const ProjectsInfo = [
             There are many apps and websites that help people schedule professionaly and I hope to create something much more suited for casual use. 
         `,
         'projectDescriptionTest':[
-            `Thank you for taking a look at my Portfolio!`,
-            `The goal of this site was to make a very simple place to test and use tools while 
-            going through an entire development process.`,
-            `Simple and dynamic web page creation, containerization with simple web server, 
-            and easy deployment that still allowed options.`
+            `Web app in progress with a focus on helping people plan.`,
+            `I always wanted an application that could help people start and complete plans that has a focus with collaboration.`,
+            `Uses multiple tools as shown above, inside of Docker containers, to complete a technology stack for a simple application.`
         ],
         'projectTechnology': [
             'Docker',
@@ -65,11 +63,9 @@ const ProjectsInfo = [
             The way this project was structed was intended to mimick working condition as best as possible.
         `,
         'projectDescriptionTest':[
-            `Thank you for taking a look at my Portfolio!`,
-            `The goal of this site was to make a very simple place to test and use tools while 
-            going through an entire development process.`,
-            `Simple and dynamic web page creation, containerization with simple web server, 
-            and easy deployment that still allowed options.`
+            `Proof of concenpt application for Undergraduate Capstone group project.`,
+            `News app that would generate news feeds from API sources based on user preferences.`,
+            `Uses VirtualBox as a means to run application and communicates through RabbitMQ on a VLAN.`
         ],
         'projectTechnology': [
             'PHP',

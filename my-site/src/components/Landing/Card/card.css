@@ -7,14 +7,14 @@
 
 
 
-    border: solid  #0C1713 1px;
+    /* border: solid  #0C1713 1px; */
     /* background-color: #51D6FF; */
-    background-color: #8FE5FF;
+    /* background-color: #8FE5FF; */
 
 
     /* background-color:  #F8E9E9; */
     /* background-color:  #109037; */
-    /* background-color:  #a4e7b8; */
+    background-color:  #a4e7b8;
     border-radius: 8px; 
 
     transition: transform 0.3s ease 0s;

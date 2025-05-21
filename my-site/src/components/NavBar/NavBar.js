@@ -9,13 +9,13 @@ const NavBar = () => {
     return(
         <div className='navbar my-navbar'>
             <div className='nav-item left'>
-                Logo
+                {/* Logo */}
             </div>
             <div className='nav-item middle'>
                 Resume | Github
             </div>
             <div className='nav-item right'>
-                button
+                {/* button */}
             </div>
         </div>
     )

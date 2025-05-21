@@ -5,10 +5,13 @@
 
     margin: 2%;
 
+    background-color: #a4e7b8;
+    
+
     /* border-left: black solid 1px; */
     /* border-right: black solid 1px; */
     /* border-bottom: black solid 1px; */
-    /* border-radius: 8px; */
+    border-radius: 8px;
 
     padding: 1%;
 }

@@ -3,7 +3,7 @@
     /* height: 8vh; */
 
     /* should be same color as container that holds all elements */
-    border: solid #FFFEFA 1px;
+    border: solid black 1px;
     /* border: solid black 1px; */
 
 }
@@ -13,7 +13,7 @@
     margin-top: 8vh;
     text-align: center;
 
-    border: solid black 1px;
+    border: solid #a4e7b8 1px;
     border-radius: 8px;
     /* background-color: blue; */
 

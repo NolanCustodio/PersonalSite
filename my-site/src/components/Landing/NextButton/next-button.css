@@ -22,7 +22,9 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    border: 1px solid black;
+    
+    border: 1px solid white;
+    background-color: white;
 
     /* animation: next-button-hop ;
     animation-duration: 6s;

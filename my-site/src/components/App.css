@@ -1,6 +1,7 @@
 .entire-page {
     display: flex;
     justify-content: center;
+    background-color: black;
 
     /* fonts */
 
@@ -11,6 +12,7 @@
     /* font-family: "Inter", sans-serif; */
 
 
+    color:white;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;

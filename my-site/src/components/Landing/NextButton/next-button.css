@@ -23,7 +23,7 @@
     width: 50px;
     border-radius: 50%;
     
-    border: 1px solid white;
+    /* border: 1px solid #a4e7b8; */
     background-color: white;
 
     /* animation: next-button-hop ;
@@ -36,6 +36,8 @@
 .next-button:hover {
     transform: translateY(-10px);
     text-decoration: none;
+    background-color: #ffffffe1;
+
 }
 
 @media only screen and (max-width: 810px){

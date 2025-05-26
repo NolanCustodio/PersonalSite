@@ -1,15 +1,13 @@
 .entire-page {
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: #1d1c1c;
 
     /* fonts */
 
     font-family: "Nunito", sans-serif;
 
     /* font-family: "Playwrite DE Grund", cursive; */
-
-    /* font-family: "Inter", sans-serif; */
 
 
     color:white;

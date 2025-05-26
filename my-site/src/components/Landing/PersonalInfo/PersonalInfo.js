@@ -17,7 +17,7 @@ const PersonalInfo = () => {
                 <div className="logo">
                     N
                 </div>
-                <h1 >Nolan Ley Custodio</h1>
+                <h1 className='name'>Nolan Ley Custodio</h1>
                 
                 {/* <div className='links'>
                     <p>Resume</p><p>Github</p>

@@ -5,6 +5,7 @@ import ProjectCard from './ProjectCards/ProjectCard';
 import NextButton from '../NextButton/NextButton';
 
 import { ReactComponent as ArrowDown } from "../../../images/navigation/ArrowDown.svg"
+import logo from "../../../images/logo/test_logo.jpg"
 
 import './personal-info.css';
 
@@ -15,7 +16,7 @@ const PersonalInfo = () => {
         <div className='personal-info'>
             <div className='personal-info-top-half'>
                 <div className="logo">
-                    N
+                    {/* <img src={logo}/> */}
                 </div>
                 <h1 className='name'>Nolan Ley Custodio</h1>
                 

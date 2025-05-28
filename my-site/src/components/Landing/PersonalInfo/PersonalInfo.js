@@ -18,8 +18,10 @@ const PersonalInfo = () => {
                 <div className="logo">
                     {/* <img src={logo}/> */}
                 </div>
-                <h1 className='name'>Nolan Ley Custodio</h1>
-                
+
+                <div className='name-container'>
+                    <h1 className='name' data-text="Nolan.Ley.Custodio">Nolan.Ley.Custodio</h1>
+                </div>
                 {/* <div className='links'>
                     <p>Resume</p><p>Github</p>
                 </div> */}

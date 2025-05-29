@@ -20,7 +20,7 @@ const PersonalInfo = () => {
                 </div>
 
                 <div className='name-container'>
-                    <h1 className='name' data-text="Nolan.Ley.Custodio">Nolan.Ley.Custodio</h1>
+                    <h1 className='name' data-text="Nolan.Custodio">Nolan.Custodio</h1>
                 </div>
                 {/* <div className='links'>
                     <p>Resume</p><p>Github</p>

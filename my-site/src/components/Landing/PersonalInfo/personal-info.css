@@ -30,55 +30,51 @@
     border: white 1px solid;
 }
 
-.name{
-    /* font-size: 10vh;
-    border-bottom: solid 1px #a4e7b8;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto; */
-    
-}
-
-/* --------------------------------------------- */
+/* --------name animation--------------------- */
 
 .name-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* min-height: 5vh; */
-    /* background: #252839; */
 
 }
 .name {
     position: relative;
     font-size: 5vw;
-    color:#252839;
-    -webkit-text-stroke: 0.3vw #383d52;
+    color:#1d1c1c;
     text-transform: uppercase;
 }
 .name::before {
     content: attr(data-text);
     position: absolute;
-    top:0;
-    left:0;
-    width: 0;
-    height: 100%;
+
+    /* when width is set to 0 it can loop clean, when 100 only goes left to right and stops */
+    /* width: 0; */
+
     color: #a4e7b8;
-    -webkit-text-stroke: 0vw #383d52;
-    border-right: 2px solid #a4e7b8;
+    border-right: 3px solid #a4e7b8;
     overflow: hidden;
-    animation: animate 6s linear infinite;
+    animation: animate 6s linear 1, cursor 1s infinite;
 }
 
 @keyframes animate {
-    0% ,10%,100%{
+    0%{
         width: 0;
     }
-    70%,90%{
+
+    100%{
         width: 100%;
     }
 }
+@keyframes cursor {
+    50%{
+        border-right: 3px solid #1d1c1c;
+    }
+
+}
+
 /* --------------------------------------------- */
+
 .links{
     display: flex;
     justify-content: center;

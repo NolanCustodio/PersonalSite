@@ -1,5 +1,6 @@
 import React from 'react';
 
+import resumePath from "../Resume/NolanLeyCustodioResume.pdf";
 import './nav-bar.css';
 
 
@@ -12,7 +13,10 @@ const NavBar = () => {
                 {/* Logo */}
             </div>
             <div className='nav-item middle'>
-                Resume | Github
+                <a target="_blank" href={resumePath}>Resume</a>
+                <p> | </p>
+                <a target="_blank" href='https://github.com/NolanCustodio'>Github</a>
+                {/* Resume | Github */}
             </div>
             <div className='nav-item right'>
                 {/* button */}

@@ -53,11 +53,18 @@ const SingleTechIcon = ({ name }) => {
 
 const IconDisplay = (props) => {
     return (
-        <div className='all-tech-icons'>
-            {props.technologies.map((name) => (
-                <SingleTechIcon name={name} key={name} />
+        <div className='tech-icon-container'>
+            <div className='tool-text'>
+                {/* <p> */}
+                    Tools:
+                {/* </p> */}
+            </div>
+            <div className='all-tech-icons'>
+                {props.technologies.map((name) => (
+                    <SingleTechIcon name={name} key={name} />
 
-            ))}
+                ))}
+            </div>
         </div>
     )
 }

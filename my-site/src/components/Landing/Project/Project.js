@@ -11,7 +11,7 @@ const ProjectDescription = (props) => {
     // console.log(props.projectDescription[0]);
     let rtnComponent = [];
 
-    for(let i = 0; i < 3; i++){
+    for (let i = 0; i < 3; i++) {
         rtnComponent.push(
             <div className={'single-project-description description-index-' + i} key={i}>
                 {props.projectDescription[i]}
@@ -39,13 +39,18 @@ const Project = (props) => {
             <div className='project'>
                 <div className='project-top-half'>
                     <h1 className='project-name'>
-                        {props.projectName}
+                        <a href={props.projectGithub} target='_blank' className='project-name-link'>
+
+                            {props.projectName}
+
+                        </a>
                     </h1>
+
                     <IconDisplay technologies={props.projectTechnology} />
 
                     {/* <p className='project-description'>{props.projectDescription}</p> */}
                     <div className='project-description'>
-                        <ProjectDescription projectDescription={props.projectDescriptionTest}/>
+                        <ProjectDescription projectDescription={props.projectDescriptionTest} />
                     </div>
                 </div>
                 <div className='project-bottom-half'>

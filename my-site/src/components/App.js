@@ -22,7 +22,7 @@ function App() {
 
     return (
         <div>
-            <NavBar/>
+            {/* <NavBar/> */}
             <div className='entire-page'>
                 <Landing />
             </div>

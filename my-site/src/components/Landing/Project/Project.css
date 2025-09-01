@@ -27,12 +27,29 @@
     height: 80%;
 }
 
+@keyframes small-hop{
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-10px);
+    }
+    
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
 .project-name{
     display: flex;
     justify-content: center;
     align-items: center;
 
-    border-bottom: solid 2px #a4e7b8;
+    border: solid 2px #a4e7b8;
+    /* border-bottom: solid 2px #a4e7b8; */
 
     width: 60%;
     height: 12vh;
@@ -41,6 +58,24 @@
     font-size: 500%;
     font-family: monospace, monospace;
     /* text-decoration-line: underline; */
+
+    animation-name: small-hop;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+.project-name-link{
+    color: #a4e7b8;
+    width: 100%;
+}
+
+.project-name-link:hover{
+    /* border: #a4e7b8; */
+    color: #a4e7b8;
 }
 
 .project-description{

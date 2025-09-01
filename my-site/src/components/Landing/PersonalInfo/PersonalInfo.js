@@ -15,9 +15,9 @@ const PersonalInfo = () => {
     return(
         <div className='personal-info'>
             <div className='personal-info-top-half'>
-                <div className="logo">
+                {/* <div className="logo"> */}
                     {/* <img src={logo}/> */}
-                </div>
+                {/* </div> */}
 
                 <div className='name-container'>
                     <h1 className='name' data-text="Nolan.Custodio">Nolan.Custodio</h1>

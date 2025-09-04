@@ -1,31 +1,22 @@
-.tech-icon-container{
+.tech-icon-container {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    margin: 10vh 4% 10vh 4%;
+    margin: 10vh 2vw 10vh 2vw;
 
     /* border: 1px solid green; */
 }
 
-.tool-text{
-    width: 5%;
-
-    display: block;
-    
-    background-color: white;
-    color: black;
-}
-
-.single-icon{
+.single-icon {
     justify-content: center;
-    /* height: 40%; */
-    width: 10%;
+    height: 12vh;
 
     margin: 2%;
 
     /* border: solid 1px #a4e7b8; */
     background-color: #4e4e4ea8;
-    
+
 
     /* border-left: black solid 1px; */
     /* border-right: black solid 1px; */
@@ -35,25 +26,27 @@
     padding: 1%;
 }
 
-.all-tech-icons{
+/* .all-tech-icons{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* width: 95%; */
+    width: 95%;
+} */
+
+@media only screen and (max-width: 1000px) {
+    .single-icon {
+        height: 12vw;
+    }
+
+    .tech-icon-container {
+        margin: 4vh 2vw 4vh 2vw;
+    }
+
 }
 
-@media only screen and (max-width: 700px) {
-    .all-tech-icons{
-        /* margin-top: 10%;
-        margin-bottom: 10%; */
+@media only screen and (max-width: 400px) {
+    
 
-        margin: 5vh 0% 5vh 0%;
-    }
-
-    .single-icon{
-        width: 20%;
-        /* width: 50%; */
-    }
 }
 
 /* @media only screen and (max-width: 700px) {

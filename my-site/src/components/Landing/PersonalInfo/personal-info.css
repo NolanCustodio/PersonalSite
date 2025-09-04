@@ -37,7 +37,7 @@
     justify-content: center;
     align-items: center;
 
-    height: 40vh;
+    height: 30vh;
 }
 .name {
     position: relative;
@@ -95,7 +95,11 @@
 
 @media only screen and (max-width: 1000px) {
     .personal-info-top-half{
-        height: 88vh;
+        height: 80vh;
+    }
+
+    .name{
+        font-size: 7vw;
     }
 
     .project-list{

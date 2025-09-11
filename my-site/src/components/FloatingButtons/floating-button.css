@@ -1,0 +1,16 @@
+.floating-buttons {
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    width: 5vw;
+    right: 40px;
+    top: 5vh;
+}
+
+.single-button{
+    margin-top: 1vh;
+    margin-right: auto;
+    margin-bottom: 1vh;
+    margin-left: auto;
+}

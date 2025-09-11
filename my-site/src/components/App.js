@@ -11,6 +11,7 @@ import './App.css';
 
 import Landing from './Landing/Landing';
 import NavBar from './NavBar/NavBar';
+import FloatingButtons from './FloatingButtons/FloatingButtons';
 // import IntersectionObserver from './IntersectionObserver/IntersectionObserver';
 
 
@@ -23,7 +24,9 @@ function App() {
     return (
         <div>
             {/* <NavBar/> */}
+            <FloatingButtons/>
             <div className='entire-page'>
+                {/* <ResumeButton/>/ */}
                 <Landing />
             </div>
         </div>

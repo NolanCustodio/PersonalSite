@@ -17,11 +17,12 @@ const SingleButton = (props) => {
     const Component = resourceIcons[props.name]
 
     return (
-        <div className='single-button'>
-            <a href={props.path} target="_blank" rel="noreferrer">
-                <button>
-                    <Component/>
+        <div className='single-button-container'>
+            <a href={props.path} target="_blank" rel="noreferrer" className='resource-link'>
+                <button className='single-button'>
+                    <Component className='svg-icon'/>
                 </button>
+                <p className='resourse-name'>{props.name}</p>
             </a>
         </div>
     )

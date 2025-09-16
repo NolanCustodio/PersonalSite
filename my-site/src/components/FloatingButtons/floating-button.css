@@ -1,3 +1,11 @@
+.single-button-container {
+    margin-top: 1vh;
+    margin-right: auto;
+    margin-bottom: 1vh;
+    margin-left: auto;
+
+}
+
 .floating-buttons {
     display: flex;
     flex-direction: column;
@@ -8,9 +16,25 @@
     top: 5vh;
 }
 
-.single-button{
-    margin-top: 1vh;
-    margin-right: auto;
-    margin-bottom: 1vh;
-    margin-left: auto;
+.single-button {
+    border-radius: 50px;
+}
+
+.svg-icon {
+
+    height: 5vh;
+    /* width: 10vw; */
+}
+
+.resource-link {
+    text-decoration: none;
+}
+
+.resource-link:hover {
+    text-decoration: none;
+}
+
+.resourse-name {
+    text-align: center;
+    color:white;
 }

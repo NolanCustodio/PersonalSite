@@ -1,7 +1,5 @@
 .single-button-container {
-    margin-top: 1vh;
     margin-right: auto;
-    margin-bottom: 1vh;
     margin-left: auto;
 
 }
@@ -21,12 +19,11 @@
 }
 
 .svg-icon {
-
     height: 5vh;
-    /* width: 10vw; */
 }
 
 .resource-link {
+    /* parent */
     text-decoration: none;
 }
 
@@ -35,6 +32,38 @@
 }
 
 .resourse-name {
+    /* child */
+
     text-align: center;
-    color:white;
+    color: white;
+
+    transform-origin: top;
+}
+
+.single-button-container .resourse-name {
+    transition: transform 0.3s ease-out;
+    transform: scaleY(0);
+}
+
+.single-button-container:hover .resourse-name {
+    transform: scaleY(1);
+}
+
+@media only screen and (max-width: 700px) {
+    .floating-buttons {
+        right: 30px;
+    }
+
+    .svg-icon {
+        height: 3vh;
+    }
+
+    .single-button-container .resourse-name {
+        transition: transform 0.3s ease-out;
+        transform: scaleY(1);
+    }
+
+    .resourse-name{
+        font-size: 1.5vh;
+    }
 }
